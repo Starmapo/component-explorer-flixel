@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<module preload="all" preloader="custom.Preloader">
+    <resources>
+        <resource path="assets/css" prefix="css" />
+        <resource path="assets/icons" prefix="icons" />
+        <resource path="assets/images" prefix="images" />
+        <resource path="assets/images/people" prefix="people" />
+        <resource path="assets/views" prefix="views" />
+        <resource path="assets/fonts" prefix="fonts" />
+        <resource path="assets/themes" prefix="themes" />
+        <resource path="source/fakedata" prefix="source/fakedata" />
+        <resource path="source/views" prefix="source/views" />
+        <resource path="source/views/fakeemployeeapp" prefix="source/views/fakeemployeeapp" />
+        <resource path="source/windows" prefix="source/windows" />
+        <resource path="source/custom" prefix="source/custom" />
+    </resources>
+
+    <components>
+        <component package="custom" />
+    </components>
+
+    <themes>
+        <default>
+            <style resource="themes/default/main.css" />
+        </default>
+    </themes>
+</module>

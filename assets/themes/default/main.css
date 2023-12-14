@@ -1,0 +1,15 @@
+.view-container-scrollview {
+    border: none;
+    __background-color: $default-background-color;
+    background-color:none;
+}
+
+#themeBox {
+    border-left: 1px solid $normal-border-color;
+    border-right: 1px solid $normal-border-color;
+    background-color: $secondary-background-color;
+}
+
+#mainTabs .tabview-contents {
+    __background-color: $default-background-color;
+}

@@ -1,0 +1,63 @@
+<hbox width="100%" height="100%" style="padding: 0px;spacing:0px;padding-bottom:10px;" styleName="default-background">
+    <style>
+        .code-editor {
+            border: none;
+        }
+
+        .view-container {
+            padding: 0px;
+        }
+
+        .view-container-scrollview > .scrollview-contents {
+            padding: 10px;
+            padding-top: 0;
+        }
+        
+        #mainTree .image {
+            opacity: .8;
+        }
+        
+        #mainTabs > .tabview-content {
+            __border-top: none;
+            border-top-color: none;
+        }
+    </style>
+    <box width="100%" height="100%">
+        <vbox width="75%" height="100%" horizontalAlign="right" style="spacing: 0px;">
+            <box id="themeBox" width="100%" style="padding: 10px;padding-bottom:0;">
+                <dropdown id="themeSelector" width="170" selectedIndex="0" horizontalAlign="right">
+                    <data>
+                        <item text="Default Theme" themeId="default" />
+                        <item text="Dark Theme" themeId="dark" />
+                        <!--
+                        <item text="Polar Night" themeId="polar-night" />
+                        -->    
+                    </data>
+                </dropdown>    
+            </box>    
+            <tabview id="mainTabs" width="100%" height="100%" tabPosition="bottom" horizontalAlign="right">
+            </tabview>
+        </vbox>    
+        
+        <vbox width="25%" height="100%" style="padding-top: 0px;">
+            <hbox width="100%" height="100%">
+                <treeview id="mainTree" width="100%" height="100%" styleName="full-width borderless" style="border: none;" allowFocus="false" />
+            </hbox>    
+        </vbox>    
+    </box>   
+
+    
+    <box width="100%" height="100%" style="padding-top: 10px;" hidden="true">
+        <tabview id="viewTabs" width="100%" height="100%">
+            
+        </tabview>
+    </box>
+    
+    <box width="200" height="100%" style="padding-top: 10px;" hidden="true">
+        <tabview id="logTabs" width="100%" height="100%">
+            <box text="Log" icon="icons/16/document_editing.png" width="100%" height="100%">
+                <textarea text="" id="logData" width="100%" height="100%" style="padding-left: 5px;padding-top: 5px;" />
+            </box>    
+        </tabview>
+    </box>
+</hbox>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vbox width="100%">
+    <section-header text="Default Buttons" />
+    <hbox>
+        <hbox>
+            <button text="Normal" />
+            <button text="Toggle" toggle="true" selected="true" />
+            <button text="Repeater" repeater="true" />
+            <button text="Disabled" disabled="true" />
+        </hbox>    
+        <grid columns="2">
+            <button text="Left" icon="haxeui-core/styles/default/haxeui_small.png" />
+            <button text="Right" icon="haxeui-core/styles/default/haxeui_small.png" iconPosition="right" />
+            <button text="Top" icon="haxeui-core/styles/default/haxeui_small.png" iconPosition="top" width="100%" />
+            <button text="Bottom" icon="haxeui-core/styles/default/haxeui_small.png" iconPosition="bottom" width="100%" />
+        </grid>
+        <button text="Disabled"  icon="haxeui-core/styles/default/haxeui_small.png" disabled="true" />
+    </hbox>
+    
+    <section-header text="Button Bars" />
+    <vbox>
+        <hbox>
+            <vbox>
+                <button-bar allowUnselection="true">
+                    <button text="Item 1" />
+                </button-bar>
+
+                <button-bar allowUnselection="true">
+                    <button text="Item 1" />
+                    <button text="Item 2" />
+                </button-bar>
+                
+                <button-bar allowUnselection="true">
+                    <button text="Item 1" />
+                    <button text="Item 2" />
+                    <button text="Item 3" />
+                </button-bar>
+                
+                <button-bar selectedIndex="3">
+                    <button text="Item 1" />
+                    <button text="Item 2" />
+                    <button text="Item 3" disabled="true" />
+                    <button text="Item 4" />
+                    <button text="Item 5" />
+                </button-bar>
+            </vbox>
+                
+            <button-bar selectedIndex="4" direction="vertical">
+                <button text="Item 1" />
+                <button text="Item 2" />
+                <button text="Item 3" disabled="true" />
+                <button text="Item 4" />
+                <button text="Item 5" />
+            </button-bar>
+
+            <button-bar direction="vertical" allowUnselection="true">
+                <button text="Item 1" />
+                <button text="Item 2" />
+                <button text="Item 3" />
+            </button-bar>
+            
+            <button-bar direction="vertical" allowUnselection="true">
+                <button text="Item 1" />
+                <button text="Item 2" />
+            </button-bar>
+
+            <button-bar direction="vertical" allowUnselection="true">
+                <button text="Item 1" />
+            </button-bar>
+        </hbox>    
+        
+        <button-bar selectedIndex="3">
+            <button text="Item 1" icon="haxeui-core/styles/default/haxeui_small.png" iconPosition="top" />
+            <button text="Item 2" icon="haxeui-core/styles/default/haxeui_small.png" iconPosition="top" />
+            <button text="Item 3" icon="haxeui-core/styles/default/haxeui_small.png" iconPosition="top" disabled="true" />
+            <button text="Item 4" icon="haxeui-core/styles/default/haxeui_small.png" iconPosition="top" />
+            <button text="Item 5" icon="haxeui-core/styles/default/haxeui_small.png" iconPosition="top" />
+        </button-bar>
+        
+        <button-bar selectedIndex="4">
+            <button text="Item 1" icon="haxeui-core/styles/default/haxeui_small.png" iconPosition="bottom" />
+            <button text="Item 2" icon="haxeui-core/styles/default/haxeui_small.png" iconPosition="bottom" />
+            <button text="Item 3" icon="haxeui-core/styles/default/haxeui_small.png" iconPosition="bottom" disabled="true" />
+            <button text="Item 4" icon="haxeui-core/styles/default/haxeui_small.png" iconPosition="bottom" />
+            <button text="Item 5" icon="haxeui-core/styles/default/haxeui_small.png" iconPosition="bottom" />
+        </button-bar>
+    </vbox>
+</vbox>   
