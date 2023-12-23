@@ -6,8 +6,10 @@ import haxe.ui.containers.TreeViewNode;
 import haxe.ui.core.Screen;
 import haxe.ui.events.UIEvent;
 import haxe.ui.themes.ThemeManager;
-import js.Browser;
 import util.Logger;
+#if js
+import js.Browser;
+#end
 
 using StringTools;
 
@@ -220,10 +222,12 @@ class MainView extends HBox
 		var pathToSelect1:String = loadTreePath();
 
 		var pathToSelect2:String = null;
+		#if js
 		if (Browser.window.location.hash != null)
 		{
 			pathToSelect2 = Browser.window.location.hash.substr(1).replace("_", " ");
 		}
+		#end
 
 		var nodeToSelect1:TreeViewNode = null;
 		var nodeToSelect2:TreeViewNode = null;
@@ -301,7 +305,9 @@ class MainView extends HBox
 			return;
 		}
 		ViewManager.instance.showView(viewInfo);
+		#if js
 		var safePath = path.toLowerCase().replace(" ", "_");
 		Browser.window.history.pushState("", "", "#" + safePath);
+		#end
 	}
 }
