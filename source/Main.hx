@@ -1,19 +1,14 @@
 package;
 
-import haxe.ui.HaxeUIApp;
-import views.MainView;
+import flixel.FlxGame;
+import haxe.ui.Toolkit;
+import openfl.Lib;
 
 class Main
 {
 	public static function main()
 	{
-		final app = new HaxeUIApp();
-		app.ready(function()
-		{
-			var main = new MainView();
-			app.addComponent(main);
-
-			app.start();
-		});
+		Toolkit.init();
+		Lib.current.stage.addChild(new FlxGame(0, 0, PlayState, 60, 60, true));
 	}
 }
