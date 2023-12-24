@@ -1,5 +1,6 @@
 package views;
 
+import flixel.FlxG;
 import haxe.ui.Toolkit;
 import haxe.ui.containers.HBox;
 import haxe.ui.containers.TreeViewNode;
@@ -144,18 +145,22 @@ class MainView extends HBox
 		#if js
 		var days = 365;
 		js.Cookie.set("haxeui-theme", _theme, days * 24 * 60 * 60 * 1000);
-		trace("saved theme cookie: " + _theme);
+		#else
+		FlxG.save.data.haxeui_theme = _theme;
 		#end
+		trace("saved theme: " + _theme);
 	}
 
 	private function saveTreePath()
 	{
-		#if js
 		var path = mainTree.selectedNode.nodePath();
+		#if js
 		var days = 365;
 		js.Cookie.set("haxeui-selected-path", path, days * 24 * 60 * 60 * 1000);
-		trace("saved path: " + path);
+		#else
+		FlxG.save.data.haxeui_selected_path = path;
 		#end
+		trace("saved path: " + path);
 	}
 
 	private var _theme:String = "default";
@@ -164,12 +169,15 @@ class MainView extends HBox
 	{
 		#if js
 		var value = js.Cookie.get("haxeui-theme");
+		#else
+		var value = FlxG.save.data.haxeui_theme;
+		#end
 		if (value == null)
 		{
 			value = "default";
 		}
 		_theme = value;
-		trace("loaded theme cookie: " + value);
+		trace("loaded theme: " + value);
 		var indexToSelect = 0;
 		var ds = themeSelector.dataSource;
 		for (i in 0...ds.size)
@@ -186,7 +194,6 @@ class MainView extends HBox
 			Toolkit.theme = _theme;
 			changePage();
 		}
-		#end
 	}
 
 	private function loadTreePath():String
@@ -194,7 +201,7 @@ class MainView extends HBox
 		#if js
 		return js.Cookie.get("haxeui-selected-path");
 		#else
-		return null;
+		return FlxG.save.data.haxeui_selected_path;
 		#end
 	}
 
@@ -207,13 +214,14 @@ class MainView extends HBox
 		}
 		_theme = themeSelector.selectedItem.themeId;
 		saveThemeSetting();
-		#if js
 		if (_theme != Toolkit.theme)
 		{
-			// Toolkit.theme = _theme;
+			#if js
 			js.Browser.location.reload();
+			#else
+			Toolkit.theme = _theme;
+			#end
 		}
-		#end
 	}
 
 	private function populateMainTree()

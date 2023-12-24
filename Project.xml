@@ -75,5 +75,4 @@
 	<!-- _________________________________ Custom _______________________________ -->
 
 	<!--Place custom nodes like icons here-->
-	<haxeflag name="-dce" value="full" />
 </project>
