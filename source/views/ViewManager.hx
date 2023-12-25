@@ -40,6 +40,7 @@ class ViewManager
 
 	public var views:Array<ViewInfo> = [];
 	public var viewGroups:Map<String, Array<ViewInfo>> = [];
+	public var viewGroupNames:Array<String> = [];
 
 	public function registerView(info:ViewInfo)
 	{
@@ -57,6 +58,7 @@ class ViewManager
 			{
 				list = [];
 				viewGroups.set(groupName, list);
+				viewGroupNames.push(groupName);
 			}
 			list.push(info);
 		}

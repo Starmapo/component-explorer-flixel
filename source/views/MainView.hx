@@ -6,13 +6,14 @@ import haxe.ui.containers.HBox;
 import haxe.ui.containers.TreeViewNode;
 import haxe.ui.core.Screen;
 import haxe.ui.events.UIEvent;
-import haxe.ui.themes.ThemeManager;
 import util.Logger;
-#if js
-import js.Browser;
-#end
 
 using StringTools;
+
+#if js
+import haxe.ui.themes.ThemeManager;
+import js.Browser;
+#end
 
 @:build(haxe.ui.macros.ComponentMacros.build("assets/main.xml"))
 class MainView extends HBox
@@ -239,7 +240,7 @@ class MainView extends HBox
 
 		var nodeToSelect1:TreeViewNode = null;
 		var nodeToSelect2:TreeViewNode = null;
-		for (groupName in ViewManager.instance.viewGroups.keys())
+		for (groupName in ViewManager.instance.viewGroupNames)
 		{
 			var groupNode = mainTree.addNode({text: groupName});
 			groupNode.expanded = true;
