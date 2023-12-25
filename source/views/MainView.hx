@@ -29,7 +29,7 @@ class MainView extends HBox
 		ViewManager.instance.registerView({
 			group: "Basic",
 			title: "Buttons",
-			smallIcon: "icons/16/buttons.png",
+			smallIcon: "assets/icons/16/buttons.png",
 			viewClass: ButtonsView,
 			relevantFiles: ["views/buttons.xml"]
 		});
@@ -37,29 +37,36 @@ class MainView extends HBox
 			group: "Basic",
 			subGroup: "Buttons",
 			title: "As Menus",
-			smallIcon: "icons/16/layouts_3.png",
+			smallIcon: "assets/icons/16/layouts_3.png",
 			viewClass: ButtonsAsMenusView,
 			relevantFiles: ["views/buttons-as-menus.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
 			title: "Text Inputs",
-			smallIcon: "icons/16/text_area(2).png",
+			smallIcon: "assets/icons/16/text_area(2).png",
 			viewClass: TextInputsView,
 			relevantFiles: ["views/textinputs.xml"]
 		});
 
 		ViewManager.instance.registerView({
 			group: "Containers",
+			title: "Frames",
+			smallIcon: "assets/icons/16/attributes_display.png",
+			viewClass: FramesView,
+			relevantFiles: ["views/frames.xml"]
+		});
+		ViewManager.instance.registerView({
+			group: "Containers",
 			title: "Forms",
-			smallIcon: "icons/16/labels.png",
+			smallIcon: "assets/icons/16/labels.png",
 			viewClass: FormsView,
 			relevantFiles: ["views/forms.xml", "source/views/FormsView.hx"]
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",
 			title: "Dialogs",
-			smallIcon: "icons/16/dialog.png",
+			smallIcon: "assets/icons/16/dialog.png",
 			viewClass: DialogsView,
 			relevantFiles: [
 				"views/dialogs.xml",
@@ -71,7 +78,7 @@ class MainView extends HBox
 		ViewManager.instance.registerView({
 			group: "Containers",
 			title: "Windows",
-			smallIcon: "icons/16/dialog.png",
+			smallIcon: "assets/icons/16/dialog.png",
 			viewClass: WindowsView,
 			relevantFiles: [
 				"views/windows.xml",
@@ -84,7 +91,7 @@ class MainView extends HBox
 			group: "Containers",
 			subGroup: "Windows",
 			title: "Multiple Managers",
-			smallIcon: "icons/16/dialog.png",
+			smallIcon: "assets/icons/16/dialog.png",
 			viewClass: WindowsMultipleManagersView,
 			relevantFiles: [
 				"views/windows-multiple-managers.xml",
@@ -95,23 +102,31 @@ class MainView extends HBox
 		});
 
 		ViewManager.instance.registerView({
+			group: "Miscellaneous",
+			title: "Animation",
+			smallIcon: "assets/icons/16/images.png",
+			viewClass: AnimationView,
+			relevantFiles: ["views/animation.xml", "source/views/AnimationView.hx"]
+		});
+
+		ViewManager.instance.registerView({
 			group: "Examples",
 			title: "Todos",
-			smallIcon: "icons/16/radiobutton_group.png",
+			smallIcon: "assets/icons/16/radiobutton_group.png",
 			viewClass: TodosView,
 			relevantFiles: [
 				"views/todos.xml",
 				"source/views/TodosView.hx",
 				"css/todos.css",
-				"images/unchecked.png",
-				"images/checked.png",
-				"images/delete.png"
+				"assets/images/unchecked.png",
+				"assets/images/checked.png",
+				"assets/images/delete.png"
 			]
 		});
 		ViewManager.instance.registerView({
 			group: "Examples",
 			title: "Employee App",
-			smallIcon: "icons/16/dialog.png",
+			smallIcon: "assets/icons/16/dialog.png",
 			viewClass: views.fakeemployeeapp.MainView,
 			relevantFiles: [
 				"source/views/fakeemployeeapp/MainView.hx",

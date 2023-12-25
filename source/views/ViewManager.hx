@@ -135,23 +135,21 @@ class ViewManager
 	private function createRelevantFileView(file:String)
 	{
 		var ext = file.split(".").pop();
-		#if !haxeui_code_editor
 		if (ext == "hx" || ext == "xml" || ext == "css" || ext == "properties")
 		{
 			return;
 		}
-		#end
 
 		var viewContainer = new Box();
 		var label = file;
-		label = label.replace("src/fakedata/", "");
-		label = label.replace("src/views/", "");
+		label = label.replace("source/fakedata/", "");
+		label = label.replace("source/views/", "");
 		label = label.replace("fakeemployeeapp/", "");
-		label = label.replace("src/custom/", "");
-		label = label.replace("src/windows/", "");
+		label = label.replace("source/custom/", "");
+		label = label.replace("source/windows/", "");
 		label = label.replace("views/", "");
 		label = label.replace("css/", "");
-		label = label.replace("images/", "");
+		label = label.replace("assets/images/", "");
 		label = label.replace("locales/", "");
 
 		viewContainer.text = label;
@@ -159,28 +157,7 @@ class ViewManager
 		viewContainer.percentWidth = 100;
 		viewContainer.percentHeight = 100;
 
-		if (ext == "hx" || ext == "xml" || ext == "css" || ext == "properties")
-		{
-			#if haxeui_code_editor
-			var editor = new haxe.ui.editors.code.CodeEditor();
-			editor.percentWidth = 100;
-			editor.percentHeight = 100;
-			// editor.readOnly = true;
-			if (ext == "hx")
-			{
-				ext = "haxe";
-			}
-			else if (ext == "xml")
-			{
-				ext = "html";
-			}
-			// editor.language = ext;
-			var text = Resource.getString(file);
-			editor.text = text;
-			viewContainer.addComponent(editor);
-			#end
-		}
-		else if (ext == "png")
+		if (ext == "png")
 		{
 			var viewer = new Box();
 			viewer.percentWidth = 100;
@@ -198,17 +175,17 @@ class ViewManager
 
 	private function iconForExtension(ext:String):String
 	{
-		var icon = "icons/16/document.png";
+		var icon = "assets/icons/16/document.png";
 		switch (ext)
 		{
 			case "xml":
-				icon = "icons/16/document-code.png";
+				icon = "assets/icons/16/document-code.png";
 			case "hx" | "haxe":
-				icon = "icons/16/document-text.png";
+				icon = "assets/icons/16/document-text.png";
 			case "css":
-				icon = "icons/16/document-list.png";
+				icon = "assets/icons/16/document-list.png";
 			case "png":
-				icon = "icons/16/image.png";
+				icon = "assets/icons/16/image.png";
 		}
 		return icon;
 	}

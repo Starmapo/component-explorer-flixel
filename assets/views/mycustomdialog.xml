@@ -60,15 +60,15 @@
                         <progress id="rating" verticalAlign="center" width="50" />
                     </item-renderer>
                     <data>
-                        <item complete="true" name="Haxe" image="icons/logo-haxe.png" rating="100" />
-                        <item complete="true" name="Java" image="icons/logo-java.png" rating="33" />
-                        <item complete="false" name="Javascript" image="icons/logo-javascript.png" rating="75" />
-                        <item complete="true" name="C++" image="icons/logo-cpp.png" rating="63" />
-                        <item complete="false" name="PHP" image="icons/logo-php.png" rating="40" />
-                        <item complete="true" name="C#" image="icons/logo-cs.png" rating="80" />
-                        <item complete="false" name="F#" image="icons/logo-fs.png" rating="11" />
-                        <item complete="false" name="OCaml" image="icons/logo-ocaml.png" rating="39" />
-                        <item complete="true" name="Assembler" image="icons/logo-asm.png" rating="81" />
+                        <item complete="true" name="Haxe" image="assets/icons/logo-haxe.png" rating="100" />
+                        <item complete="true" name="Java" image="assets/icons/logo-java.png" rating="33" />
+                        <item complete="false" name="Javascript" image="assets/icons/logo-javascript.png" rating="75" />
+                        <item complete="true" name="C++" image="assets/icons/logo-cpp.png" rating="63" />
+                        <item complete="false" name="PHP" image="assets/icons/logo-php.png" rating="40" />
+                        <item complete="true" name="C#" image="assets/icons/logo-cs.png" rating="80" />
+                        <item complete="false" name="F#" image="assets/icons/logo-fs.png" rating="11" />
+                        <item complete="false" name="OCaml" image="assets/icons/logo-ocaml.png" rating="39" />
+                        <item complete="true" name="Assembler" image="assets/icons/logo-asm.png" rating="81" />
                     </data>
                 </listview>
 

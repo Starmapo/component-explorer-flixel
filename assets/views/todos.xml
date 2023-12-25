@@ -12,7 +12,7 @@
                     <item-renderer layout="horizontal" width="100%" style="padding: 10px;spacing:10px;">
                         <checkbox id="completed" verticalAlign="center" />
                         <textfield id="label" width="100%" verticalAlign="center" style="font-size: 24px" />
-                        <button id="delete" icon="images/delete.png" tooltip="Remove" verticalAlign="center" />
+                        <button id="delete" icon="assets/images/delete.png" tooltip="Remove" verticalAlign="center" />
                     </item-renderer>
                 </listview>
                 <box id="optionsContainer" width="100%" style="padding: 10px;" hidden="true">

@@ -80,7 +80,7 @@ class FakeEmailWindow extends Window
 
 @:xml('
     <dialog title="Please Wait" closable="false">
-        <image resource="images/preloader.png" horizontalAlign="center" />
+        <image resource="assets/images/preloader.png" horizontalAlign="center" />
         <label text="Sending email, please wait..." />
     </dialog>
 ')

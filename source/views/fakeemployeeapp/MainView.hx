@@ -28,7 +28,7 @@ class MainView extends View
 			var departmentNode = peopleTree.addNode({text: department, count: people.length});
 			for (person in people)
 			{
-				departmentNode.addNode({text: person.firstName + " " + person.lastName, icon: "haxeui-core/styles/default/haxeui.png", jobRole: person.jobRole});
+				departmentNode.addNode({text: person.firstName + " " + person.lastName, icon: person.image, jobRole: person.jobRole});
 			}
 			// departmentNode.expanded = true;
 		}

@@ -43,16 +43,16 @@
     <section-header text="Decorated Text Inputs" />
     <grid>
         <textfield>
-            <decorator icon="icons/at.png" />
+            <decorator icon="assets/icons/at.png" />
         </textfield>
         <textfield>
-            <decorator icon="icons/find.png" />
+            <decorator icon="assets/icons/find.png" />
         </textfield>
         <textfield>
-            <decorator icon="icons/globe.png" />
+            <decorator icon="assets/icons/globe.png" />
         </textfield>
         <textfield>
-            <decorator icon="icons/phone.png" />
+            <decorator icon="assets/icons/phone.png" />
         </textfield>
     </grid>
 </vbox>
