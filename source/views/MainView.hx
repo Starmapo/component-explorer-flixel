@@ -58,6 +58,18 @@ class MainView extends HBox
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",
+			title: "Dialogs",
+			smallIcon: "icons/16/dialog.png",
+			viewClass: DialogsView,
+			relevantFiles: [
+				"views/dialogs.xml",
+				"source/views/DialogsView.hx",
+				"views/mycustomdialog.xml",
+				"views/simple-login-dialog.xml"
+			]
+		});
+		ViewManager.instance.registerView({
+			group: "Containers",
 			title: "Windows",
 			smallIcon: "icons/16/dialog.png",
 			viewClass: WindowsView,
