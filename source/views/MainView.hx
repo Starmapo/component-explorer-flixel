@@ -1,10 +1,12 @@
 package views;
 
 import flixel.FlxG;
+import flixel.input.keyboard.FlxKey;
 import haxe.ui.Toolkit;
 import haxe.ui.containers.HBox;
 import haxe.ui.containers.TreeViewNode;
 import haxe.ui.core.Screen;
+import haxe.ui.events.KeyboardEvent;
 import haxe.ui.events.UIEvent;
 import util.Logger;
 
@@ -43,6 +45,18 @@ class MainView extends HBox
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
+			title: "Dropdowns",
+			smallIcon: "assets/icons/16/menu_item.png",
+			viewClass: DropDownsView,
+			relevantFiles: [
+				"views/dropdowns.xml",
+				"source/views/DropDownsView.hx",
+				"views/mydropdownhandler.xml",
+				"source/views/MyDropDownHandlerView.hx"
+			]
+		});
+		ViewManager.instance.registerView({
+			group: "Basic",
 			title: "Text Inputs",
 			smallIcon: "assets/icons/16/text_area(2).png",
 			viewClass: TextInputsView,
@@ -63,6 +77,13 @@ class MainView extends HBox
 			relevantFiles: ["views/color-pickers.xml"]
 		});
 
+		ViewManager.instance.registerView({
+			group: "Containers",
+			title: "Menus",
+			smallIcon: "assets/icons/16/menu.png",
+			viewClass: MenusView,
+			relevantFiles: ["views/menus.xml", "source/views/MenusView.hx"]
+		});
 		ViewManager.instance.registerView({
 			group: "Containers",
 			title: "Frames",
@@ -109,6 +130,13 @@ class MainView extends HBox
 			smallIcon: "assets/icons/16/table.png",
 			viewClass: EditableTableView,
 			relevantFiles: ["views/editable-table-view.xml"]
+		});
+		ViewManager.instance.registerView({
+			group: "Containers",
+			title: "Property Grids",
+			smallIcon: "assets/icons/16/attributes_display.png",
+			viewClass: PropertyGridsView,
+			relevantFiles: ["views/propertygrids.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",
@@ -186,6 +214,13 @@ class MainView extends HBox
 			viewClass: ValidatorsView,
 			relevantFiles: ["views/validators.xml", "source/views/ValidatorsView.hx"]
 		});
+		ViewManager.instance.registerView({
+			group: "Miscellaneous",
+			title: "Filters",
+			smallIcon: "assets/icons/16/images.png",
+			viewClass: FiltersView,
+			relevantFiles: ["views/filters.xml", "source/views/FiltersView.hx"]
+		});
 
 		ViewManager.instance.registerView({
 			group: "Examples",
@@ -224,6 +259,8 @@ class MainView extends HBox
 				"source/fakedata/FakePeopleDB.hx"
 			]
 		});
+
+		registerEvent(KeyboardEvent.KEY_DOWN, onKeyDown);
 	}
 
 	public override function onReady()
@@ -432,5 +469,13 @@ class MainView extends HBox
 		var safePath = path.toLowerCase().replace(" ", "_");
 		Browser.window.history.pushState("", "", "#" + safePath);
 		#end
+	}
+
+	function onKeyDown(event:KeyboardEvent)
+	{
+		if (event.keyCode == FlxKey.F3)
+		{
+			logBox.hidden = !logBox.hidden;
+		}
 	}
 }

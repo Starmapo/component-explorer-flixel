@@ -70,7 +70,7 @@
         </tabview>
     </box>
     
-    <box width="200" height="100%" style="padding-top: 10px;" hidden="true">
+    <box id="logBox" width="200" height="100%" style="padding-top: 10px;" hidden="true">
         <tabview id="logTabs" width="100%" height="100%">
             <box text="Log" icon="assets/icons/16/document_editing.png" width="100%" height="100%">
                 <textarea text="" id="logData" width="100%" height="100%" style="padding-left: 5px;padding-top: 5px;" />

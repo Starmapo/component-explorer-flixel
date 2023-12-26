@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vbox width="100%">
+    <section-header text="List Dropdowns" />
+    
+    <hbox>
+        <dropdown text="Select Item">
+            <data>
+                <item text="Item 1" />
+            </data>
+        </dropdown>
+
+        <dropdown text="Select Item">
+            <data>
+                <item text="Item 1" />
+                <item text="Item 2" />
+                <item text="Item 3" />
+                <item text="Item 4" />
+            </data>
+        </dropdown>
+        
+        <dropdown text="Select Item">
+            <data>
+                <item text="Item 1" />
+                <item text="Item 2" />
+                <item text="Item 3" />
+                <item text="Item 4" />
+                <item text="Item 5" />
+                <item text="Item 6" />
+                <item text="Item 7" />
+                <item text="Item 8" />
+                <item text="Item 9" />
+            </data>
+        </dropdown>
+        
+        <dropdown width="100">
+            <data>
+                <item text="Item 1" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 2" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 3" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 4" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 5" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 6" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 7" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 8" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 9" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            </data>
+        </dropdown>
+        
+        <dropdown width="100" dropdownWidth="200">
+            <data>
+                <item text="Item 1" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 2" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 3" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 4" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 5" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 6" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 7" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 8" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 9" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            </data>
+        </dropdown>
+        
+        <dropdown width="100" dropdownWidth="200" dropdownSize="6">
+            <data>
+                <item text="Item 1" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 2" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 3" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 4" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 5" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 6" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 7" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 8" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 9" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            </data>
+        </dropdown>
+        
+        <dropdown width="100" dropdownWidth="200" dropdownSize="-1">
+            <data>
+                <item text="Item 1" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 2" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 3" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 4" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 5" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 6" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 7" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 8" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+                <item text="Item 9" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+            </data>
+        </dropdown>
+    </hbox>    
+
+    <section-header text="Validated Dropdowns" />
+    <hbox>
+        <dropdown width="200" text="Select Item" validator="required" style="b111ackground: #4d4400 #473f00;111border-color:#807100">
+            <data>
+                <item text="Item 1" />
+                <item text="Item 2" />
+                <item text="Item 3" />
+                <item text="Item 4" />
+                <item text="Item 5" />
+            </data>
+        </dropdown>
+
+        <dropdown width="200" text="Select Email" validator="required, email" style="b111ackground: #4d4400 #473f00;111border-color:#807100">
+            <data>
+                <item text="Item 1" />
+                <item text="Item 2" />
+                <item text="someone@there.com" />
+                <item text="Item 4" />
+                <item text="someoneelse@there.com" />
+            </data>
+        </dropdown>
+
+        <dropdown width="200" text="Select Item 1 or 2 or 3" style="b111ackground: #4d4400 #473f00;111border-color:#807100">
+            <validator type="pattern" pattern="Item 1|Item 2|Item 3" />
+            <data>
+                <item text="Item 1" />
+                <item text="Item 2" />
+                <item text="Item 3" />
+                <item text="Item 4" />
+                <item text="Item 5" />
+            </data>
+        </dropdown>
+    </hbox>
+
+    <spacer height="10" />
+
+    <hbox width="100%">
+        <vbox width="100%">
+            <section-header text="Searchable Dropdowns" />
+            <hbox>
+                <dropdown width="150" dropdownWidth="200" searchable="true" searchPrompt="Find Language">
+                    <data>
+                        <item text="Haxe" icon="assets/icons/logo-haxe.png" />
+                        <item text="Java" icon="assets/icons/logo-java.png" />
+                        <item text="Javascript" icon="assets/icons/logo-javascript.png" />
+                        <item text="C++" icon="assets/icons/logo-cpp.png" />
+                        <item text="PHP" icon="assets/icons/logo-php.png" />
+                        <item text="C#" icon="assets/icons/logo-cs.png" />
+                        <item text="F#" icon="assets/icons/logo-fs.png" />
+                        <item text="OCaml" icon="assets/icons/logo-ocaml.png" />
+                        <item text="Assembler" icon="assets/icons/logo-asm.png" />
+                    </data>
+                </dropdown>
+            </hbox>
+        </vbox>
+
+        <vbox width="100%">
+            <section-header text="Calendar Dropdowns" />
+
+            <dropdown text="Select Date" type="date" />
+        </vbox>
+
+        <vbox width="100%">
+            <section-header text="Color Picker Dropdowns" />
+            <hbox>
+                <vbox>
+                    <hbox>
+                        <color-picker-popup selectedItem="#551111" id="picker1" onchange="selectedColor.backgroundColor = this.selectedItem" />
+                        <color-picker-popup selectedItem="#551111" id="picker2" liveTracking="false" onchange="selectedColor.backgroundColor = this.selectedItem" />
+                    </hbox>
+                    <color-picker-popup selectedItem="#551111" id="picker3" width="100%" onchange="selectedColor.backgroundColor = this.selectedItem" />
+                </vbox>    
+                <box id="selectedColor" width="60" height="100%" style="background-color: red" />
+            </hbox>  
+        </vbox>
+    </hbox>
+    
+    <section-header text="Custom Item Renderers" />
+    
+    <hbox>
+        <dropdown width="250">
+            <item-renderer layout="horizontal" width="100%">
+                <image id="icon" />
+                <vbox width="100%">
+                    <label id="text" style="font-size: 20px;" />
+                    <hbox width="100%">
+                        <label id="subText" style="color: #888888;" width="100%" />
+                        <progress id="progress" width="50" verticalAlign="center" />
+                    </hbox>    
+                </vbox>
+            </item-renderer>
+            <data>
+                <item text="Deutschland" subText="Germany" icon="assets/icons/flags/de.png" progress="33" />
+                <item text="España" subText="Spain" icon="assets/icons/flags/es.png" progress="15" />
+                <item text="France" subText="France" icon="assets/icons/flags/fr.png" progress="82" />
+                <item text="United Kingdom" subText="United Kingdom" icon="assets/icons/flags/gb.png" progress="40" />
+                <item text="Italia" subText="Italy" icon="assets/icons/flags/it.png" progress="64" />
+                <item text="United States" subText="United States" icon="assets/icons/flags/us.png" progress="72" />
+            </data>
+        </dropdown>
+        
+        <dropdown width="250" searchable="true" searchPrompt="Find Country">
+            <item-renderer layout="horizontal" width="100%">
+                <image id="icon" />
+                <vbox width="100%">
+                    <label id="text" style="font-size: 20px;" />
+                    <hbox width="100%">
+                        <label id="subText" style="color: #888888;" width="100%" />
+                        <progress id="progress" width="50" verticalAlign="center" />
+                    </hbox>    
+                </vbox>
+            </item-renderer>
+            <data>
+                <item text="Deutschland" subText="Germany" icon="assets/icons/flags/de.png" progress="33" />
+                <item text="España" subText="Spain" icon="assets/icons/flags/es.png" progress="15" />
+                <item text="France" subText="France" icon="assets/icons/flags/fr.png" progress="82" />
+                <item text="United Kingdom" subText="United Kingdom" icon="assets/icons/flags/gb.png" progress="40" />
+                <item text="Italia" subText="Italy" icon="assets/icons/flags/it.png" progress="64" />
+                <item text="United States" subText="United States" icon="assets/icons/flags/us.png" progress="72" />
+            </data>
+        </dropdown>
+
+        <dropdown width="205" dropdownWidth="250">
+            <item-renderer layout="horizontal" width="100%">
+                <image id="icon" width="16" height="12" verticalAlign="center" />
+                <hbox width="100%" verticalAlign="center">
+                    <label id="text" />
+                </hbox>
+            </item-renderer>
+            <item-renderer layout="horizontal" width="100%" id="dropdown-renderer">
+                <image id="icon" />
+                <vbox width="100%">
+                    <label id="text" style="font-size: 20px;" />
+                    <hbox width="100%">
+                        <label id="subText" style="color: #888888;" width="100%" />
+                        <progress id="progress" width="40" verticalAlign="center" />
+                    </hbox>    
+                </vbox>
+            </item-renderer>
+            <data>
+                <item text="Deutschland" subText="Germany" icon="assets/icons/flags/de.png" progress="33" />
+                <item text="España" subText="Spain" icon="assets/icons/flags/es.png" progress="15" />
+                <item text="France" subText="France" icon="assets/icons/flags/fr.png" progress="82" />
+                <item text="United Kingdom" subText="United Kingdom" icon="assets/icons/flags/gb.png" progress="40" />
+                <item text="Italia" subText="Italy" icon="assets/icons/flags/it.png" progress="64" />
+                <item text="United States" subText="United States" icon="assets/icons/flags/us.png" progress="72" />
+            </data>
+        </dropdown>
+    </hbox>
+    
+    <section-header text="Custom Handler" />
+    
+    <dropdown text="Select Item(s)" type="myDropDownHandler" width="160" />
+    
+</vbox>
