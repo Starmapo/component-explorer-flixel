@@ -65,6 +65,24 @@ class MainView extends HBox
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",
+			title: "List Views",
+			smallIcon: "assets/icons/16/list_box.png",
+			viewClass: ListViewsView,
+			relevantFiles: ["views/listviews.xml", "source/views/ListViewsView.hx"]
+		});
+		ViewManager.instance.registerView({
+			group: "Containers",
+			subGroup: "List Views",
+			title: "Component Events",
+			smallIcon: "assets/icons/16/buttons.png",
+			viewClass: ListViewComponentEventsView,
+			relevantFiles: [
+				"views/listview-component-events.xml",
+				"source/views/ListViewComponentEventsView.hx"
+			]
+		});
+		ViewManager.instance.registerView({
+			group: "Containers",
 			title: "Table Views",
 			smallIcon: "assets/icons/16/table.png",
 			viewClass: TableViewsView,
@@ -89,6 +107,14 @@ class MainView extends HBox
 				"views/mycustomdialog.xml",
 				"views/simple-login-dialog.xml"
 			]
+		});
+		ViewManager.instance.registerView({
+			group: "Containers",
+			subGroup: "Dialogs",
+			title: "File Dialogs",
+			smallIcon: "assets/icons/16/dialog.png",
+			viewClass: FileDialogsView,
+			relevantFiles: ["views/file-dialogs.xml", "source/views/FileDialogsView.hx"]
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",
