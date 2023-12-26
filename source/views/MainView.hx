@@ -65,6 +65,21 @@ class MainView extends HBox
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",
+			title: "Table Views",
+			smallIcon: "assets/icons/16/table.png",
+			viewClass: TableViewsView,
+			relevantFiles: ["views/tableviews.xml", "source/views/TableViewsView.hx"]
+		});
+		ViewManager.instance.registerView({
+			group: "Containers",
+			subGroup: "Table Views",
+			title: "Editable Tables",
+			smallIcon: "assets/icons/16/table.png",
+			viewClass: EditableTableView,
+			relevantFiles: ["views/editable-table-view.xml"]
+		});
+		ViewManager.instance.registerView({
+			group: "Containers",
 			title: "Dialogs",
 			smallIcon: "assets/icons/16/dialog.png",
 			viewClass: DialogsView,
@@ -101,6 +116,22 @@ class MainView extends HBox
 			]
 		});
 
+		ViewManager.instance.registerView({
+			group: "Miscellaneous",
+			title: "Locales",
+			smallIcon: "assets/icons/16/labels2.png",
+			viewClass: LocalesView,
+			relevantFiles: [
+				"views/locales.xml",
+				"source/views/LocalesView.hx",
+				"locales/en.properties",
+				"locales/en_US.properties",
+				"locales/fr.properties",
+				"locales/cy.properties",
+				"locales/pl.properties",
+				"locales/ru.properties"
+			]
+		});
 		ViewManager.instance.registerView({
 			group: "Miscellaneous",
 			title: "Animation",
