@@ -48,6 +48,20 @@ class MainView extends HBox
 			viewClass: TextInputsView,
 			relevantFiles: ["views/textinputs.xml"]
 		});
+		ViewManager.instance.registerView({
+			group: "Basic",
+			title: "Steppers",
+			smallIcon: "assets/icons/16/spin.png",
+			viewClass: SteppersView,
+			relevantFiles: ["views/steppers.xml"]
+		});
+		ViewManager.instance.registerView({
+			group: "Basic",
+			title: "Color Pickers",
+			smallIcon: "assets/icons/16/color-picker-default.png",
+			viewClass: ColorPickersView,
+			relevantFiles: ["views/color-pickers.xml"]
+		});
 
 		ViewManager.instance.registerView({
 			group: "Containers",
@@ -175,6 +189,13 @@ class MainView extends HBox
 
 		ViewManager.instance.registerView({
 			group: "Examples",
+			title: "Simple Paint",
+			smallIcon: "assets/icons/16/images.png",
+			viewClass: SimplePaintView,
+			relevantFiles: ["views/simple-paint.xml", "source/views/SimplePaintView.hx"]
+		});
+		ViewManager.instance.registerView({
+			group: "Examples",
 			title: "Todos",
 			smallIcon: "assets/icons/16/radiobutton_group.png",
 			viewClass: TodosView,
@@ -239,6 +260,7 @@ class MainView extends HBox
 		js.Cookie.set("haxeui-theme", _theme, days * 24 * 60 * 60 * 1000);
 		#else
 		FlxG.save.data.haxeui_theme = _theme;
+		FlxG.save.flush();
 		#end
 		trace("saved theme: " + _theme);
 	}
@@ -251,6 +273,7 @@ class MainView extends HBox
 		js.Cookie.set("haxeui-selected-path", path, days * 24 * 60 * 60 * 1000);
 		#else
 		FlxG.save.data.haxeui_selected_path = path;
+		FlxG.save.flush();
 		#end
 		trace("saved path: " + path);
 	}

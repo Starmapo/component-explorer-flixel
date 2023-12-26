@@ -1,0 +1,65 @@
+<vbox width="100%">
+    <hbox width="100%">
+        <vbox width="100%">
+            <section-header text="Popup Color Picker" />
+            <hbox>
+                <vbox>
+                    <hbox>
+                        <color-picker-popup id="picker1" onchange="selectedColor.backgroundColor = this.selectedItem" />
+                        <color-picker-popup id="picker2" liveTracking="false" onchange="selectedColor.backgroundColor = this.selectedItem" />
+                    </hbox>
+                    <color-picker-popup id="picker3" width="100%" onchange="selectedColor.backgroundColor = this.selectedItem" />
+                </vbox>    
+                <box id="selectedColor" width="60" height="100%" style="background-color: red" />
+            </hbox>  
+        </vbox>    
+        
+        <vbox width="200">
+            <section-header text="Options" />
+            <checkbox text="Disable" onchange="picker1.disabled = picker2.disabled = picker3.disabled = this.selected" />
+        </vbox>
+    </hbox>    
+    
+    <spacer height="5" />
+    
+    <hbox width="100%">
+        <vbox width="100%">
+            <section-header text="Color Picker" />
+            <color-picker id="picker4" onchange="selectedColor.backgroundColor = this.currentColor" />
+        </vbox>    
+        
+        <vbox width="200">
+            <section-header text="Options" />
+            <checkbox text="Disable" onchange="picker4.disabled = this.selected" />
+        </vbox>
+    </hbox>    
+
+    <spacer height="5" />
+    
+    <hbox width="100%">
+        <vbox width="100%">
+            <section-header text="Variants" />
+            
+            <hbox width="100%">
+                <vbox>
+                    <color-picker styleName="no-sliders" id="picker5" width="220" height="200" onchange="selectedColor.backgroundColor = this.currentColor" />
+                    <label text="(No Sliders)" horizontalAlign="center" />
+                </vbox>    
+                
+                <spacer width="100%" />
+                
+                <vbox>
+                    <color-picker styleName="no-text-inputs" id="picker6" width="220" height="200" onchange="selectedColor.backgroundColor = this.currentColor" />
+                    <label text="(No Text Inputs)" horizontalAlign="center" />
+                </vbox>    
+
+                <spacer width="100%" />
+                
+                <vbox>
+                    <color-picker styleName="no-controls" id="picker7" width="220" height="200" onchange="selectedColor.backgroundColor = this.currentColor" />
+                    <label text="(No Controls)" horizontalAlign="center" />
+                </vbox>    
+            </hbox>    
+        </vbox>    
+    </hbox>    
+</vbox>
