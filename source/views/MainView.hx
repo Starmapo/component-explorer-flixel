@@ -139,6 +139,13 @@ class MainView extends HBox
 			viewClass: AnimationView,
 			relevantFiles: ["views/animation.xml", "source/views/AnimationView.hx"]
 		});
+		ViewManager.instance.registerView({
+			group: "Miscellaneous",
+			title: "Validators",
+			smallIcon: "assets/icons/16/textfield.png",
+			viewClass: ValidatorsView,
+			relevantFiles: ["views/validators.xml", "source/views/ValidatorsView.hx"]
+		});
 
 		ViewManager.instance.registerView({
 			group: "Examples",

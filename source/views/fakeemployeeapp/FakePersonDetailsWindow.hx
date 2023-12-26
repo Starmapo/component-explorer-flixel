@@ -21,6 +21,10 @@ using haxe.ui.animation.AnimationTools;
             <hbox text="Details" width="100%" style="padding: 10px;spacing:20px;">
                 <box width="128" height="128">
                     <image id="personImage" width="128" height="128" style="border-radius: 4px;border:1px solid $accent-color;" />
+					<!-- i mean, why not! :D -->
+                    <box verticalAlign="bottom" horizontalAlign="right" style="background-color: white;background-opacity: .7;border:1px solid $accent-color;border-radius: 0px;padding-top:5px;margin-right:-2px;margin-bottom:-2px;border-bottom-right-radius: 4px;border-top-left-radius: 4px;">
+                        <mini-graph width="50" height="16" />
+                    </box>
                 </box>
                 <grid width="100%">
                     <label text="Full Name:" styleName="field-label" />

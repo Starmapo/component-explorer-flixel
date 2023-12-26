@@ -126,6 +126,6 @@ class MiniGraph extends Canvas
 		componentGraphics.clear();
 		componentGraphics.setPixels(_pixels);
 
-		Toolkit.callLater(onFrame);
+		// Toolkit.callLater(onFrame);
 	}
 }

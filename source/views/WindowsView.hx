@@ -4,6 +4,7 @@ import haxe.ui.containers.windows.WindowManager;
 import haxe.ui.events.MouseEvent;
 import windows.InlineDialogsWindow;
 import windows.SimpleFormWindow;
+import windows.SimpleGraphWindow;
 
 @:build(haxe.ui.macros.ComponentMacros.build("assets/views/windows.xml"))
 class WindowsView extends View
@@ -21,6 +22,15 @@ class WindowsView extends View
 		var window = new SimpleFormWindow();
 		window.left = 10;
 		window.top = 80;
+		WindowManager.instance.addWindow(window);
+	}
+
+	@:bind(openSimpleGraphLink, MouseEvent.CLICK)
+	private function onOpenSimpleGraph(_)
+	{
+		var window = new SimpleGraphWindow();
+		window.left = 200;
+		window.top = 100;
 		WindowManager.instance.addWindow(window);
 	}
 

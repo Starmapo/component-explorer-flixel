@@ -1,0 +1,81 @@
+<vbox width="100%">
+    <section-header text="Validated Text Inputs" />
+    <grid columns="4" style="horizontal-spacing: 20px;">
+        <label width="100" text="Required field:" verticalAlign="center" />
+        <textfield validator="required" />
+
+        <label width="100" text="Email field 1:" verticalAlign="center" />
+        <textfield validators="required, email" />
+
+        <label width="100" text="Email field 2:" verticalAlign="center" />
+        <textfield validator="email" />
+
+        <label width="100" text="Custom Pattern" verticalAlign="center" />
+        <textfield>
+            <validator type="pattern" pattern="Item 1|Item 2|Item 3" />
+        </textfield>
+    </grid>
+
+    <section-header text="Validated Text Inputs (With Decorators)" />
+    <grid columns="4" style="horizontal-spacing: 20px;">
+        <style>
+            .decorator-validation .decorator {
+                background: none;
+                border: none;
+            }
+
+            .decorator-validation.invalid-value .decorator {
+                icon: "haxeui-core/styles/shared/error-small.png";
+            }
+    
+            .decorator-validation.valid-value .decorator {
+                icon: "haxeui-core/styles/shared/tick-small.png";
+            }
+        </style>
+        <label width="100" text="Email field:" verticalAlign="center" />
+        <textfield styleName="decorator-validation" validators="email">
+            <decorator />
+        </textfield>
+
+        <label width="100" text="Custom Pattern" verticalAlign="center" />
+        <textfield styleName="decorator-validation">
+            <validator type="pattern" pattern="Item 1|Item 2|Item 3" />
+            <decorator />
+        </textfield>
+    </grid>
+
+    <section-header text="Validated Dropdowns" />
+    <hbox>
+        <dropdown width="200" text="Select Item" validator="required">
+            <data>
+                <item text="Item 1" />
+                <item text="Item 2" />
+                <item text="Item 3" />
+                <item text="Item 4" />
+                <item text="Item 5" />
+            </data>
+        </dropdown>
+
+        <dropdown width="200" text="Select Email" validator="required, email">
+            <data>
+                <item text="Item 1" />
+                <item text="Item 2" />
+                <item text="someone@there.com" />
+                <item text="Item 4" />
+                <item text="someoneelse@there.com" />
+            </data>
+        </dropdown>
+
+        <dropdown width="200" text="Select Item 1 or 2 or 3">
+            <validator type="pattern" pattern="Item 1|Item 2|Item 3" />
+            <data>
+                <item text="Item 1" />
+                <item text="Item 2" />
+                <item text="Item 3" />
+                <item text="Item 4" />
+                <item text="Item 5" />
+            </data>
+        </dropdown>
+    </hbox>
+
+</vbox>

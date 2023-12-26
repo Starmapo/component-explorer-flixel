@@ -3,6 +3,7 @@
         <box id="windowContainerA" styleNames="window-manager-container" width="100%" height="100%">
             <vbox style="padding: 10px;">
                 <link id="openSimpleFormLinkA" text="Open Simple Form Example" />
+                <link id="openSimpleGraphLinkA" text="Open Simple Graph Example" />
                 <link id="openInlineDialogsLinkA" text="Open Inline Dialogs Examples" />
             </vbox>
         </box>
@@ -13,6 +14,7 @@
         <box id="windowContainerB" styleNames="window-manager-container" width="100%" height="100%">
             <vbox style="padding: 10px;">
                 <link id="openSimpleFormLinkB" text="Open Simple Form Example" />
+                <link id="openSimpleGraphLinkB" text="Open Simple Graph Example" />
                 <link id="openInlineDialogsLinkB" text="Open Inline Dialogs Examples" />
             </vbox>
         </box>

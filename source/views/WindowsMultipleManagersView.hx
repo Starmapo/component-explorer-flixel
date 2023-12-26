@@ -4,6 +4,7 @@ import haxe.ui.containers.windows.WindowManager;
 import haxe.ui.events.MouseEvent;
 import windows.InlineDialogsWindow;
 import windows.SimpleFormWindow;
+import windows.SimpleGraphWindow;
 
 @:build(haxe.ui.macros.ComponentMacros.build("assets/views/windows-multiple-managers.xml"))
 class WindowsMultipleManagersView extends View
@@ -35,6 +36,15 @@ class WindowsMultipleManagersView extends View
 		_windowManagerA.addWindow(window);
 	}
 
+	@:bind(openSimpleGraphLinkA, MouseEvent.CLICK)
+	private function onOpenSimpleGraphA(_)
+	{
+		var window = new SimpleGraphWindow();
+		window.left = 200;
+		window.top = 100;
+		_windowManagerA.addWindow(window);
+	}
+
 	@:bind(openInlineDialogsLinkA, MouseEvent.CLICK)
 	private function onOpenInlineDialogsA(_)
 	{
@@ -52,6 +62,15 @@ class WindowsMultipleManagersView extends View
 		var window = new SimpleFormWindow();
 		window.left = 10;
 		window.top = 80;
+		_windowManagerB.addWindow(window);
+	}
+
+	@:bind(openSimpleGraphLinkB, MouseEvent.CLICK)
+	private function onOpenSimpleGraphB(_)
+	{
+		var window = new SimpleGraphWindow();
+		window.left = 200;
+		window.top = 100;
 		_windowManagerB.addWindow(window);
 	}
 
