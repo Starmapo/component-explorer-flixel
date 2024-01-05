@@ -20,6 +20,8 @@ import js.Browser;
 @:build(haxe.ui.macros.ComponentMacros.build("assets/main.xml"))
 class MainView extends HBox
 {
+	static var _initialized:Bool = false;
+
 	public function new()
 	{
 		super();
@@ -27,6 +29,25 @@ class MainView extends HBox
 		trace("Screen size: " + Screen.instance.width + "x" + Screen.instance.height);
 		Logger.logData = logData;
 		ViewManager.instance.viewTabs = mainTabs;
+
+		initViews();
+
+		Screen.instance.registerEvent(KeyboardEvent.KEY_DOWN, onKeyDown);
+	}
+
+	public override function onReady()
+	{
+		super.onReady();
+		populateMainTree();
+	}
+
+	function initViews()
+	{
+		if (_initialized)
+		{
+			return;
+		}
+		_initialized = true;
 
 		ViewManager.instance.registerView({
 			group: "Basic",
@@ -100,6 +121,13 @@ class MainView extends HBox
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",
+			title: "Scroll Views",
+			smallIcon: "assets/icons/16/scroll_pane_text_image.png",
+			viewClass: ScrollViewsView,
+			relevantFiles: ["views/scrollviews.xml"]
+		});
+		ViewManager.instance.registerView({
+			group: "Containers",
 			title: "List Views",
 			smallIcon: "assets/icons/16/list_box.png",
 			viewClass: ListViewsView,
@@ -114,6 +142,26 @@ class MainView extends HBox
 			relevantFiles: [
 				"views/listview-component-events.xml",
 				"source/views/ListViewComponentEventsView.hx"
+			]
+		});
+		ViewManager.instance.registerView({
+			group: "Containers",
+			subGroup: "List Views",
+			title: "As Menus",
+			smallIcon: "assets/icons/16/layouts_4.png",
+			viewClass: ListViewsAsMenusView,
+			relevantFiles: ["views/listviews-as-menus.xml"]
+		});
+		ViewManager.instance.registerView({
+			group: "Containers",
+			subGroup: "List Views",
+			title: "Code Item Renderer",
+			smallIcon: "assets/icons/16/labels.png",
+			viewClass: ListViewCodeItemRenderer,
+			relevantFiles: [
+				"views/listview-code-item-renderer.xml",
+				"source/custom/MyListViewItemRenderer.hx",
+				"source/views/ListViewCodeItemRenderer.hx"
 			]
 		});
 		ViewManager.instance.registerView({
@@ -184,6 +232,13 @@ class MainView extends HBox
 			]
 		});
 
+		ViewManager.instance.registerView({
+			group: "Miscellaneous",
+			title: "Tooltips",
+			smallIcon: "assets/icons/16/label.png",
+			viewClass: TooltipsView,
+			relevantFiles: ["views/tooltips.xml", "source/views/TooltipsView.hx"]
+		});
 		ViewManager.instance.registerView({
 			group: "Miscellaneous",
 			title: "Locales",
@@ -266,14 +321,6 @@ class MainView extends HBox
 				"source/fakedata/FakePeopleDB.hx"
 			]
 		});
-
-		Screen.instance.registerEvent(KeyboardEvent.KEY_DOWN, onKeyDown);
-	}
-
-	public override function onReady()
-	{
-		super.onReady();
-		populateMainTree();
 	}
 
 	private function changePage()
