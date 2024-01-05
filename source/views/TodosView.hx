@@ -8,6 +8,7 @@ import haxe.ui.events.KeyboardEvent;
 import haxe.ui.events.MouseEvent;
 import haxe.ui.events.UIEvent;
 
+@:keep
 class TodoItem implements IDataItem
 {
 	public var completed:Bool;

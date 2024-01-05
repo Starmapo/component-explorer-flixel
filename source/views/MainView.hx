@@ -202,6 +202,13 @@ class MainView extends HBox
 		});
 		ViewManager.instance.registerView({
 			group: "Miscellaneous",
+			title: "Drag",
+			smallIcon: "assets/icons/16/dialog.png",
+			viewClass: DragManagerView,
+			relevantFiles: ["views/drag-manager.xml", "source/views/DragManagerView.hx"]
+		});
+		ViewManager.instance.registerView({
+			group: "Miscellaneous",
 			title: "Animation",
 			smallIcon: "assets/icons/16/images.png",
 			viewClass: AnimationView,
@@ -260,7 +267,7 @@ class MainView extends HBox
 			]
 		});
 
-		registerEvent(KeyboardEvent.KEY_DOWN, onKeyDown);
+		Screen.instance.registerEvent(KeyboardEvent.KEY_DOWN, onKeyDown);
 	}
 
 	public override function onReady()
@@ -473,9 +480,12 @@ class MainView extends HBox
 
 	function onKeyDown(event:KeyboardEvent)
 	{
-		if (event.keyCode == FlxKey.F3)
+		switch (event.keyCode)
 		{
-			logBox.hidden = !logBox.hidden;
+			case FlxKey.F3:
+				logBox.hidden = !logBox.hidden;
+			case FlxKey.F5:
+				FlxG.resetState();
 		}
 	}
 }
