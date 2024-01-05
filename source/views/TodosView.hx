@@ -90,7 +90,8 @@ class TodosView extends View
 	@:bind(clearCompletedLink, MouseEvent.CLICK)
 	private function onClearCompleted(_)
 	{
-		for (i in 0...todoData.size)
+		var i = todoData.size;
+		while (--i >= 0)
 		{
 			var item = todoData.get(i);
 			if (item.completed)
