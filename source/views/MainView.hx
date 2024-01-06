@@ -459,6 +459,14 @@ class MainView extends HBox
 				"source/fakedata/FakePeopleDB.hx"
 			]
 		});
+
+		ViewManager.instance.registerView({
+			group: "Tests",
+			title: "Mouse Test",
+			smallIcon: "haxeui-core/styles/default/haxeui_tiny.png",
+			viewClass: MouseTestView,
+			relevantFiles: ["views/mouse-test.xml"]
+		});
 	}
 
 	private function changePage()
