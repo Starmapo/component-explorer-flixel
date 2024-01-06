@@ -76,6 +76,8 @@
 	<haxeflag name="-dce" value="full" />
 	<haxedef name="analyzer-optimize" />
 
+	<haxeflag name="--macro" value="keep('haxe.ui.core.Component')" />
+
 	<!-- _________________________________ Custom _______________________________ -->
 
 	<!--Place custom nodes like icons here-->

@@ -96,6 +96,13 @@ class MainView extends HBox
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
+			title: "Links",
+			smallIcon: "assets/icons/16/labels.png",
+			viewClass: LinksView,
+			relevantFiles: ["views/links.xml"]
+		});
+		ViewManager.instance.registerView({
+			group: "Basic",
 			title: "Dropdowns",
 			smallIcon: "assets/icons/16/menu_item.png",
 			viewClass: DropDownsView,
@@ -140,6 +147,13 @@ class MainView extends HBox
 			smallIcon: "assets/icons/16/spin.png",
 			viewClass: SteppersView,
 			relevantFiles: ["views/steppers.xml"]
+		});
+		ViewManager.instance.registerView({
+			group: "Basic",
+			title: "Switches",
+			smallIcon: "assets/icons/16/button_toggle.png",
+			viewClass: SwitchesView,
+			relevantFiles: ["views/switches.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
@@ -373,10 +387,25 @@ class MainView extends HBox
 		});
 		ViewManager.instance.registerView({
 			group: "Miscellaneous",
+			subGroup: "Animation",
+			title: "Animated Dots",
+			smallIcon: "assets/icons/16/images.png",
+			viewClass: AnimatedDotsView,
+			relevantFiles: ["views/animated-dots.xml", "source/views/AnimatedDotsView.hx"]
+		});
+		ViewManager.instance.registerView({
+			group: "Miscellaneous",
 			title: "Validators",
 			smallIcon: "assets/icons/16/textfield.png",
 			viewClass: ValidatorsView,
 			relevantFiles: ["views/validators.xml", "source/views/ValidatorsView.hx"]
+		});
+		ViewManager.instance.registerView({
+			group: "Miscellaneous",
+			title: "App Icon",
+			smallIcon: "assets/icons/16/images.png",
+			viewClass: AppIconView,
+			relevantFiles: ["views/app-icon.xml", "source/views/AppIconView.hx"]
 		});
 		ViewManager.instance.registerView({
 			group: "Miscellaneous",

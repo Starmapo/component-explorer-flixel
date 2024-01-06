@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vbox>
+    <section-header text="Default Switch" />
+    <hbox>
+        <switch />
+        <switch disabled="true" />
+    </hbox>    
+
+    <section-header text="Circle Switch:" />
+    <hbox>
+        <switch styleName="circle-switch" />
+        <switch styleName="circle-switch" disabled="true" />
+    </hbox>    
+
+    <section-header text="Pill Switch:" />
+    <hbox>
+        <switch styleName="pill-switch" />
+        <switch styleName="pill-switch" disabled="true" />
+    </hbox>
+</vbox>
