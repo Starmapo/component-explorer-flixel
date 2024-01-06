@@ -66,6 +66,13 @@ class MainView extends HBox
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
+			title: "Check Boxes",
+			smallIcon: "assets/icons/16/check_boxes.png",
+			viewClass: CheckBoxesView,
+			relevantFiles: ["views/checkboxes.xml"]
+		});
+		ViewManager.instance.registerView({
+			group: "Basic",
 			title: "Dropdowns",
 			smallIcon: "assets/icons/16/menu_item.png",
 			viewClass: DropDownsView,
@@ -82,6 +89,20 @@ class MainView extends HBox
 			smallIcon: "assets/icons/16/text_area(2).png",
 			viewClass: TextInputsView,
 			relevantFiles: ["views/textinputs.xml"]
+		});
+		ViewManager.instance.registerView({
+			group: "Basic",
+			title: "Scroll Bars",
+			smallIcon: "assets/icons/16/scroll_bar_horizontal.png",
+			viewClass: ScrollBarsView,
+			relevantFiles: ["views/scrollbars.xml"]
+		});
+		ViewManager.instance.registerView({
+			group: "Basic",
+			title: "Sliders",
+			smallIcon: "assets/icons/16/seek_bar_050.png",
+			viewClass: SlidersView,
+			relevantFiles: ["views/sliders.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
@@ -174,6 +195,14 @@ class MainView extends HBox
 		ViewManager.instance.registerView({
 			group: "Containers",
 			subGroup: "Table Views",
+			title: "Column Styling",
+			smallIcon: "assets/icons/16/images.png",
+			viewClass: TableViewColumnStylingView,
+			relevantFiles: ["views/tableview-column-styling.xml"]
+		});
+		ViewManager.instance.registerView({
+			group: "Containers",
+			subGroup: "Table Views",
 			title: "Editable Tables",
 			smallIcon: "assets/icons/16/table.png",
 			viewClass: EditableTableView,
@@ -205,6 +234,13 @@ class MainView extends HBox
 			smallIcon: "assets/icons/16/dialog.png",
 			viewClass: FileDialogsView,
 			relevantFiles: ["views/file-dialogs.xml", "source/views/FileDialogsView.hx"]
+		});
+		ViewManager.instance.registerView({
+			group: "Containers",
+			title: "Splitters",
+			smallIcon: "assets/icons/16/layouts_6.png",
+			viewClass: SplitterView,
+			relevantFiles: ["views/splitters.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",

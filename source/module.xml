@@ -16,6 +16,10 @@
         <component package="custom" />
     </components>
 
+    <scriptlets>
+        <import class="util.Logger" static="true" />
+    </scriptlets>
+
     <themes>
         <default>
             <style resource="themes/default/main.css" />

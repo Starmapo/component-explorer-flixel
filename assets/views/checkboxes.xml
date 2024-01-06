@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vbox width="100%">
+    <section-header text="Default Checkboxes" />
+    <hbox>
+        <checkbox text="Checkbox 1A" onchange="util.Logger.log(this.text + ' changed')" />
+        <checkbox text="Checkbox 1B" selected="true" onchange="util.Logger.log(this.text + ' changed')" />
+        <checkbox text="Checkbox 1C" onchange="util.Logger.log(this.text + ' changed')" />
+        <checkbox text="Checkbox 1D" disabled="true" />
+    </hbox>    
+    
+    <group layout="horizontal" onchange="util.Logger.log('group changed - ' + event.target.text)">
+        <checkbox text="Checkbox 2A" />
+        <checkbox text="Checkbox 2B" />
+        <checkbox text="Checkbox 2C" selected="true" />
+        <checkbox text="Checkbox 2D" disabled="true" />
+    </group>
+</vbox>

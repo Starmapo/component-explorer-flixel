@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vbox>
+    <section-header text="Default Sliders" />
+    
+    <hbox>
+        <vbox>
+            <slider pos="0" />
+            <slider pos="25" />
+            <slider pos="50" step="10" />
+            <slider pos="75" />
+            <slider pos="100" />
+            <slider pos="50" center="50" />
+            <slider start="25" end="75" />
+            
+            <slider start="25" end="75" disabled="true" />
+            <slider pos="50" disabled="true" />
+        </vbox>    
+        
+        <slider pos="0" direction="vertical" />
+        <slider pos="25" direction="vertical" />
+        <slider pos="50" direction="vertical" step="10" />
+        <slider pos="75" direction="vertical" />
+        <slider pos="100" direction="vertical" />
+        <slider pos="50" center="50" direction="vertical" />
+        <slider start="25" end="75" direction="vertical" />
+        
+        <slider start="25" end="75" direction="vertical" disabled="true" />
+        <slider pos="50" direction="vertical" disabled="true" />
+    </hbox>    
+    
+    <section-header text="Ticked Sliders" />
+    
+    <hbox>
+        <vbox>
+            <slider pos="0" minorTicks="5" majorTicks="10" />
+            <slider pos="25" minorTicks="5" majorTicks="10" />
+            <slider pos="50" minorTicks="5" majorTicks="10" />
+            <slider pos="75" minorTicks="5" majorTicks="10" />
+            <slider pos="100" minorTicks="5" majorTicks="10" />
+            <slider pos="50" center="50" minorTicks="5" majorTicks="10" />
+            <slider start="25" end="75" minorTicks="5" majorTicks="10" />
+        </vbox>    
+        
+        <slider pos="0" direction="vertical" minorTicks="5" majorTicks="10" />
+        <slider pos="25" direction="vertical" minorTicks="5" majorTicks="10" />
+        <slider pos="50" direction="vertical" minorTicks="5" majorTicks="10" />
+        <slider pos="75" direction="vertical" minorTicks="5" majorTicks="10" />
+        <slider pos="100" direction="vertical" minorTicks="5" majorTicks="10" />
+        <slider pos="50" center="50" direction="vertical" minorTicks="5" majorTicks="10" />
+        <slider start="25" end="75" direction="vertical" minorTicks="5" majorTicks="10" />
+    </hbox>    
+</vbox>
