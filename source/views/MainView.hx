@@ -66,6 +66,22 @@ class MainView extends HBox
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
+			subGroup: "Buttons",
+			title: "Styled Buttons",
+			smallIcon: "assets/icons/16/button.png",
+			viewClass: ButtonsStyledView,
+			relevantFiles: ["views/buttons-styled.xml"]
+		});
+		ViewManager.instance.registerView({
+			group: "Basic",
+			subGroup: "Buttons",
+			title: "Bitmap Buttons",
+			smallIcon: "assets/icons/16/images.png",
+			viewClass: ButtonsBitmapView,
+			relevantFiles: ["views/buttons-bitmap.xml", "assets/images/bitmap_button.png"]
+		});
+		ViewManager.instance.registerView({
+			group: "Basic",
 			title: "Check Boxes",
 			smallIcon: "assets/icons/16/check_boxes.png",
 			viewClass: CheckBoxesView,
@@ -118,7 +134,29 @@ class MainView extends HBox
 			viewClass: ColorPickersView,
 			relevantFiles: ["views/color-pickers.xml"]
 		});
+		ViewManager.instance.registerView({
+			group: "Basic",
+			title: "Item Pickers",
+			smallIcon: "assets/icons/16/menu.png",
+			viewClass: ItemPickersView,
+			relevantFiles: ["views/item-pickers.xml"]
+		});
 
+		ViewManager.instance.registerView({
+			group: "Containers",
+			title: "Tabs",
+			smallIcon: "assets/icons/16/tab_content.png",
+			viewClass: TabsView,
+			relevantFiles: ["views/tabs.xml"]
+		});
+		ViewManager.instance.registerView({
+			group: "Containers",
+			subGroup: "Tabs",
+			title: "Tab Styling",
+			smallIcon: "assets/icons/16/images.png",
+			viewClass: TabsStylingView,
+			relevantFiles: ["views/tabs-styling.xml"]
+		});
 		ViewManager.instance.registerView({
 			group: "Containers",
 			title: "Menus",
