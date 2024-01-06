@@ -1,0 +1,5 @@
+<box>
+    <vbox>
+        <button id="closeSideBar" text="Close" />
+    </vbox>
+</box>

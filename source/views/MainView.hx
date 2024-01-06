@@ -89,6 +89,13 @@ class MainView extends HBox
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
+			title: "Labels",
+			smallIcon: "assets/icons/16/labels2.png",
+			viewClass: LabelsView,
+			relevantFiles: ["views/labels.xml"]
+		});
+		ViewManager.instance.registerView({
+			group: "Basic",
 			title: "Dropdowns",
 			smallIcon: "assets/icons/16/menu_item.png",
 			viewClass: DropDownsView,
@@ -105,6 +112,13 @@ class MainView extends HBox
 			smallIcon: "assets/icons/16/text_area(2).png",
 			viewClass: TextInputsView,
 			relevantFiles: ["views/textinputs.xml"]
+		});
+		ViewManager.instance.registerView({
+			group: "Basic",
+			title: "Calendars",
+			smallIcon: "assets/icons/16/data_field.png",
+			viewClass: CalendarsView,
+			relevantFiles: ["views/calendars.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
@@ -248,6 +262,20 @@ class MainView extends HBox
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",
+			title: "Tree Views",
+			smallIcon: "assets/icons/16/labels.png",
+			viewClass: TreeViewsView,
+			relevantFiles: ["views/treeviews.xml", "source/views/TreeViewsView.hx"]
+		});
+		ViewManager.instance.registerView({
+			group: "Containers",
+			title: "Side Bars",
+			smallIcon: "assets/icons/16/layouts.png",
+			viewClass: SidebarsView,
+			relevantFiles: ["views/sidebars.xml", "source/views/SidebarsView.hx", "views/mysidebar.xml"]
+		});
+		ViewManager.instance.registerView({
+			group: "Containers",
 			title: "Property Grids",
 			smallIcon: "assets/icons/16/attributes_display.png",
 			viewClass: PropertyGridsView,
@@ -349,6 +377,13 @@ class MainView extends HBox
 			smallIcon: "assets/icons/16/textfield.png",
 			viewClass: ValidatorsView,
 			relevantFiles: ["views/validators.xml", "source/views/ValidatorsView.hx"]
+		});
+		ViewManager.instance.registerView({
+			group: "Miscellaneous",
+			title: "Notifications",
+			smallIcon: "assets/icons/16/button.png",
+			viewClass: NotificationsView,
+			relevantFiles: ["views/notifications.xml", "source/views/NotificationsView.hx"]
 		});
 		ViewManager.instance.registerView({
 			group: "Miscellaneous",

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vbox width="100%">
+    <section-header text="As Dropdown" />
+    <dropdown text="Select Date" type="date" />
+ 
+    <spacer height="10" />
+    
+    <section-header text="Calendar" />
+    <calendar />
+
+    <spacer height="10" />
+    
+    <section-header text="Calendar View" />
+    <calendarview/>
+</vbox>
