@@ -2,6 +2,7 @@ package views;
 
 import flixel.FlxG;
 import flixel.input.keyboard.FlxKey;
+import haxe.ui.HaxeUIApp;
 import haxe.ui.Toolkit;
 import haxe.ui.containers.HBox;
 import haxe.ui.containers.TreeViewNode;
@@ -678,7 +679,8 @@ class MainView extends HBox
 			case FlxKey.F3:
 				logBox.hidden = !logBox.hidden;
 			case FlxKey.F5:
-				FlxG.resetState();
+				HaxeUIApp.instance.removeComponent(this);
+				HaxeUIApp.instance.addComponent(new MainView());
 		}
 	}
 }

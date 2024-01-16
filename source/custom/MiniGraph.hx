@@ -73,6 +73,10 @@ class MiniGraph extends Canvas
 
 	private function onFrame()
 	{
+		if (_isDisposed)
+		{
+			return;
+		}
 		if (skipFrame == true)
 		{
 			skipFrame = false;
@@ -126,6 +130,6 @@ class MiniGraph extends Canvas
 		componentGraphics.clear();
 		componentGraphics.setPixels(_pixels);
 
-		// Toolkit.callLater(onFrame);
+		Toolkit.callLater(onFrame);
 	}
 }
