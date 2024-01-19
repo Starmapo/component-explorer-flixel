@@ -676,6 +676,8 @@ class MainView extends HBox
 	{
 		switch (event.keyCode)
 		{
+			case FlxKey.F1:
+				FlxG.state.openSubState(new substates.TestSubState());
 			case FlxKey.F3:
 				logBox.hidden = !logBox.hidden;
 			case FlxKey.F5:
