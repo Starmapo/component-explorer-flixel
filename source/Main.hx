@@ -1,5 +1,6 @@
 package;
 
+import flixel.FlxG;
 import flixel.FlxGame;
 import haxe.ui.HaxeUIApp;
 import haxe.ui.Toolkit;
@@ -10,6 +11,7 @@ class Main
 {
 	public static function main()
 	{
+		FlxG.log.redirectTraces = true;
 		startApp();
 	}
 
