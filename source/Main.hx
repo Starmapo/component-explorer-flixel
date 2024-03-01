@@ -30,6 +30,6 @@ class Main
 	static function startFlxGame()
 	{
 		Toolkit.init();
-		Lib.current.stage.addChild(new FlxGame(0, 0, PlayState, 60, 60, true));
+		Lib.current.stage.addChild(new FlxGame(1280, 720, PlayState, 60, 60, true));
 	}
 }
