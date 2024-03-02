@@ -90,6 +90,13 @@ class MainView extends HBox
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
+			title: "Option Boxes",
+			smallIcon: "assets/icons/16/radio_button.png",
+			viewClass: OptionBoxesView,
+			relevantFiles: ["views/optionboxes.xml"]
+		});
+		ViewManager.instance.registerView({
+			group: "Basic",
 			title: "Labels",
 			smallIcon: "assets/icons/16/labels2.png",
 			viewClass: LabelsView,
@@ -295,6 +302,13 @@ class MainView extends HBox
 			smallIcon: "assets/icons/16/attributes_display.png",
 			viewClass: PropertyGridsView,
 			relevantFiles: ["views/propertygrids.xml"]
+		});
+		ViewManager.instance.registerView({
+			group: "Containers",
+			title: "Accordions",
+			smallIcon: "assets/icons/16/accordion.png",
+			viewClass: AccordionsView,
+			relevantFiles: ["views/accordions.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",
