@@ -482,6 +482,13 @@ class MainView extends HBox
 			viewClass: MouseTestView,
 			relevantFiles: ["views/mouse-test.xml"]
 		});
+		ViewManager.instance.registerView({
+			group: "Tests",
+			title: "Locales Test",
+			smallIcon: "haxeui-core/styles/default/haxeui_tiny.png",
+			viewClass: LocalesTestView,
+			relevantFiles: ["views/locales-test.xml"]
+		});
 	}
 
 	private function changePage()
@@ -694,9 +701,12 @@ class MainView extends HBox
 				FlxG.state.openSubState(new substates.TestSubState());
 			case FlxKey.F3:
 				logBox.hidden = !logBox.hidden;
-			case FlxKey.F5:
-				HaxeUIApp.instance.removeComponent(this);
-				HaxeUIApp.instance.addComponent(new MainView());
+			case FlxKey.F4:
+				FlxG.resetState();
+				FlxG.signals.postStateSwitch.addOnce(function()
+				{
+					HaxeUIApp.instance.addComponent(new MainView());
+				});
 		}
 	}
 }

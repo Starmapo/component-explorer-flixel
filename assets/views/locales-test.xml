@@ -1,0 +1,24 @@
+<vbox width="100%">
+    <hbox>
+        <vbox>
+            <slider id="slider1" precision="2" />
+            <label text="{{basic.params2, slider1.value}}" />
+            <rule />
+            <number-stepper step=".1" precision="2" />
+        </vbox>
+
+        <style>
+            #languageSelector .button {
+                padding: 6px;
+            }
+        </style>
+        <button-bar id="languageSelector" direction="vertical" selectedIndex="0" onchange="haxe.ui.locale.LocaleManager.instance.language = this.selectedButton.userData">
+            <button icon="assets/icons/flags-small/uk.png" userData="en" tooltip="{{english}}" />
+            <button icon="assets/icons/flags-small/us.png" userData="en_US" tooltip="{{english.us}}" />
+            <button icon="assets/icons/flags-small/france.png" userData="fr" tooltip="{{french}}" />
+            <button icon="assets/icons/flags-small/wales.png" userData="cy" tooltip="{{welsh}}" />
+            <button icon="assets/icons/flags-small/poland.png" userData="pl" tooltip="{{poland}}" />
+            <button icon="assets/icons/flags-small/russian.png" userData="ru" tooltip="{{russian}}" />
+        </button-bar>
+    </hbox>
+</vbox>

@@ -3,48 +3,48 @@
     {
       "name": "flixel",
       "type": "haxelib",
-      "version": null
+      "version": "5.6.2"
     },
     {
       "name": "flixel-text-input",
       "type": "haxelib",
-      "version": null
+      "version": "2.0.2"
     },
     {
       "name": "haxeui-core",
       "type": "git",
       "dir": null,
-      "ref": "master",
+      "ref": "c86ba920",
       "url": "https://github.com/haxeui/haxeui-core.git"
     },
     {
       "name": "haxeui-flixel",
       "type": "git",
       "dir": null,
-      "ref": "master",
+      "ref": "5d827d4",
       "url": "https://github.com/haxeui/haxeui-flixel.git"
     },
     {
       "name": "hxcpp",
       "type": "haxelib",
-      "version": null
+      "version": "4.3.2"
     },
     {
       "name": "hxcpp-debug-server",
       "type": "git",
       "dir": "hxcpp-debug-server",
-      "ref": "master",
+      "ref": "8563f6e",
       "url": "https://github.com/Starmapo/hxcpp-debugger.git"
     },
     {
       "name": "lime",
       "type": "haxelib",
-      "version": null
+      "version": "8.1.2"
     },
     {
       "name": "openfl",
       "type": "haxelib",
-      "version": null
+      "version": "9.3.3"
     }
   ]
 }
