@@ -1,0 +1,18 @@
+<vbox width="100%">
+    <scrollview width="200" height="200" contentWidth="100%" >
+        <vbox width="100%">
+            <image resource="haxeui-core/styles/default/haxeui_small.png" />
+            <image resource="haxeui-core/styles/default/haxeui_small.png" width="20" height="26" />
+            <image resource="haxeui-core/styles/default/haxeui_small.png" />
+            <image resource="haxeui-core/styles/default/haxeui_small.png" width="20" height="26" />
+            <image resource="haxeui-core/styles/default/haxeui_small.png" width="20" height="26" />
+            <image resource="haxeui-core/styles/default/haxeui_small.png" width="20" height="26" />
+            <image resource="haxeui-core/styles/default/haxeui_small.png" width="20" height="26" />
+            <image resource="haxeui-core/styles/default/haxeui_small.png" width="20" height="26" />
+            <image resource="haxeui-core/styles/default/haxeui_small.png" width="20" height="26" />
+            <label text="Plain label" />
+            <textfield placeholder="Enter some text" />
+            <mini-graph width="40" height="20" />
+        </vbox>
+    </scrollview>
+</vbox>

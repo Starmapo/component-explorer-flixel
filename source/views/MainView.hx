@@ -477,15 +477,22 @@ class MainView extends HBox
 
 		ViewManager.instance.registerView({
 			group: "Tests",
+			title: "Clipping Test",
+			smallIcon: "assets/icons/16/scroll_pane_text_image.png",
+			viewClass: ClippingTestView,
+			relevantFiles: ["views/clipping-test.xml"]
+		});
+		ViewManager.instance.registerView({
+			group: "Tests",
 			title: "Mouse Test",
-			smallIcon: "haxeui-core/styles/default/haxeui_tiny.png",
+			smallIcon: "assets/icons/16/seek_bar_050.png",
 			viewClass: MouseTestView,
 			relevantFiles: ["views/mouse-test.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Tests",
 			title: "Locales Test",
-			smallIcon: "haxeui-core/styles/default/haxeui_tiny.png",
+			smallIcon: "assets/icons/16/labels2.png",
 			viewClass: LocalesTestView,
 			relevantFiles: ["views/locales-test.xml"]
 		});
