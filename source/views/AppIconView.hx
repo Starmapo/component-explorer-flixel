@@ -46,7 +46,7 @@ class AppIconView extends View
 		{
 			_currentFrame = 1;
 		}
-		HaxeUIApp.instance.icon = "icons/title-icon/frame-" + _currentFrame + ".png";
+		HaxeUIApp.instance.icon = "assets/icons/title-icon/frame-" + _currentFrame + ".png";
 	}
 
 	@:bind(resetIconButton, MouseEvent.CLICK)

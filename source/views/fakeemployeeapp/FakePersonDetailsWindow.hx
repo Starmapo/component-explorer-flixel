@@ -3,8 +3,8 @@ package views.fakeemployeeapp;
 import fakedata.FakePerson;
 import haxe.ui.containers.dialogs.Dialog.DialogButton;
 import haxe.ui.containers.dialogs.MessageBox.MessageBoxType;
-import haxe.ui.events.MouseEvent;
 import haxe.ui.containers.windows.Window;
+import haxe.ui.events.MouseEvent;
 
 using haxe.ui.animation.AnimationTools;
 
