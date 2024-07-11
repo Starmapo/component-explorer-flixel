@@ -88,6 +88,13 @@ class MiniGraph extends Canvas
 
 		var cx = Std.int(this.width);
 		var cy = Std.int(this.height);
+		if (cx <= 0 || cy <= 0)
+		{
+			componentGraphics.clear();
+			Toolkit.callLater(onFrame);
+			return;
+		}
+
 		if (cx * cy * 4 != _pixels.length)
 		{
 			_pixels = Bytes.alloc(Std.int(this.width * this.height * 4));

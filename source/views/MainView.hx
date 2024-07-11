@@ -165,6 +165,32 @@ class MainView extends HBox
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
+			title: "Canvas",
+			smallIcon: "assets/icons/16/layouts.png",
+			viewClass: CanvasView,
+			relevantFiles: [
+				"views/canvas.xml",
+				"source/custom/DemoGraph.hx",
+				"source/custom/ColorTable.hx",
+				"source/custom/Noise.hx",
+				"source/custom/MiniGraph.hx"
+			]
+		});
+		ViewManager.instance.registerView({
+			group: "Basic",
+			subGroup: "Canvas",
+			title: "As Icons",
+			smallIcon: "assets/icons/16/images_flickr.png",
+			viewClass: CanvasAsIconsView,
+			relevantFiles: [
+				"views/canvas-as-icons.xml",
+				"source/views/CanvasAsIconsView.hx",
+				"source/custom/Noise.hx",
+				"source/custom/MiniGraph.hx"
+			]
+		});
+		ViewManager.instance.registerView({
+			group: "Basic",
 			title: "Color Pickers",
 			smallIcon: "assets/icons/16/color-picker-default.png",
 			viewClass: ColorPickersView,
