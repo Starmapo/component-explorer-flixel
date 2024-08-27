@@ -53,7 +53,8 @@ class MainView extends HBox
 		ViewManager.instance.registerView({
 			group: "Basic",
 			title: "Buttons",
-			smallIcon: "assets/icons/16/buttons.png",
+			smallIcon: "icons/svg/buttons.png",
+			largeIcon: "icons/svg/buttons.png",
 			viewClass: ButtonsView,
 			relevantFiles: ["views/buttons.xml"]
 		});
@@ -61,7 +62,8 @@ class MainView extends HBox
 			group: "Basic",
 			subGroup: "Buttons",
 			title: "As Menus",
-			smallIcon: "assets/icons/16/layouts_3.png",
+			smallIcon: "icons/svg/layout-3-cols.png",
+			largeIcon: "icons/svg/layout-3-cols.png",
 			viewClass: ButtonsAsMenusView,
 			relevantFiles: ["views/buttons-as-menus.xml"]
 		});
@@ -69,7 +71,8 @@ class MainView extends HBox
 			group: "Basic",
 			subGroup: "Buttons",
 			title: "Styled Buttons",
-			smallIcon: "assets/icons/16/button.png",
+			smallIcon: "icons/svg/paintbrush.png",
+			largeIcon: "icons/svg/paintbrush.png",
 			viewClass: ButtonsStyledView,
 			relevantFiles: ["views/buttons-styled.xml"]
 		});
@@ -77,42 +80,48 @@ class MainView extends HBox
 			group: "Basic",
 			subGroup: "Buttons",
 			title: "Bitmap Buttons",
-			smallIcon: "assets/icons/16/images.png",
+			smallIcon: "icons/svg/paintbrush.png",
+			largeIcon: "icons/svg/paintbrush.png",
 			viewClass: ButtonsBitmapView,
-			relevantFiles: ["views/buttons-bitmap.xml", "assets/images/bitmap_button.png"]
+			relevantFiles: ["views/buttons-bitmap.xml", "images/bitmap_button.png"]
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
 			title: "Check Boxes",
-			smallIcon: "assets/icons/16/check_boxes.png",
+			smallIcon: "icons/svg/checkboxes.png",
+			largeIcon: "icons/svg/checkboxes.png",
 			viewClass: CheckBoxesView,
 			relevantFiles: ["views/checkboxes.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
 			title: "Option Boxes",
-			smallIcon: "assets/icons/16/radio_button.png",
+			smallIcon: "icons/svg/optionboxes.png",
+			largeIcon: "icons/svg/optionboxes.png",
 			viewClass: OptionBoxesView,
 			relevantFiles: ["views/optionboxes.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
 			title: "Labels",
-			smallIcon: "assets/icons/16/labels2.png",
+			smallIcon: "icons/svg/labels.png",
+			largeIcon: "icons/svg/labels.png",
 			viewClass: LabelsView,
 			relevantFiles: ["views/labels.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
 			title: "Links",
-			smallIcon: "assets/icons/16/labels.png",
+			smallIcon: "icons/svg/links.png",
+			largeIcon: "icons/svg/links.png",
 			viewClass: LinksView,
 			relevantFiles: ["views/links.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
 			title: "Dropdowns",
-			smallIcon: "assets/icons/16/menu_item.png",
+			smallIcon: "icons/svg/dropdown.png",
+			largeIcon: "icons/svg/dropdown.png",
 			viewClass: DropDownsView,
 			relevantFiles: [
 				"views/dropdowns.xml",
@@ -124,49 +133,56 @@ class MainView extends HBox
 		ViewManager.instance.registerView({
 			group: "Basic",
 			title: "Text Inputs",
-			smallIcon: "assets/icons/16/text_area(2).png",
+			smallIcon: "icons/svg/textinputs.png",
+			largeIcon: "icons/svg/textinputs.png",
 			viewClass: TextInputsView,
 			relevantFiles: ["views/textinputs.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
 			title: "Calendars",
-			smallIcon: "assets/icons/16/data_field.png",
+			smallIcon: "icons/svg/calendars.png",
+			largeIcon: "icons/svg/calendars.png",
 			viewClass: CalendarsView,
 			relevantFiles: ["views/calendars.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
 			title: "Scroll Bars",
-			smallIcon: "assets/icons/16/scroll_bar_horizontal.png",
+			smallIcon: "icons/svg/scrollbars.png",
+			largeIcon: "icons/svg/scrollbars.png",
 			viewClass: ScrollBarsView,
 			relevantFiles: ["views/scrollbars.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
 			title: "Sliders",
-			smallIcon: "assets/icons/16/seek_bar_050.png",
+			smallIcon: "icons/svg/sliders.png",
+			largeIcon: "icons/svg/sliders.png",
 			viewClass: SlidersView,
 			relevantFiles: ["views/sliders.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
 			title: "Steppers",
-			smallIcon: "assets/icons/16/spin.png",
+			smallIcon: "icons/svg/steppers.png",
+			largeIcon: "icons/svg/steppers.png",
 			viewClass: SteppersView,
 			relevantFiles: ["views/steppers.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
 			title: "Switches",
-			smallIcon: "assets/icons/16/button_toggle.png",
+			smallIcon: "icons/svg/switches.png",
+			largeIcon: "icons/svg/switches.png",
 			viewClass: SwitchesView,
 			relevantFiles: ["views/switches.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
 			title: "Canvas",
-			smallIcon: "assets/icons/16/layouts.png",
+			smallIcon: "icons/svg/canvas.png",
+			largeIcon: "icons/svg/canvas.png",
 			viewClass: CanvasView,
 			relevantFiles: [
 				"views/canvas.xml",
@@ -180,7 +196,8 @@ class MainView extends HBox
 			group: "Basic",
 			subGroup: "Canvas",
 			title: "As Icons",
-			smallIcon: "assets/icons/16/images_flickr.png",
+			smallIcon: "icons/svg/canvas-as-icons.png",
+			largeIcon: "icons/svg/canvas-as-icons.png",
 			viewClass: CanvasAsIconsView,
 			relevantFiles: [
 				"views/canvas-as-icons.xml",
@@ -192,14 +209,16 @@ class MainView extends HBox
 		ViewManager.instance.registerView({
 			group: "Basic",
 			title: "Color Pickers",
-			smallIcon: "assets/icons/16/color-picker-default.png",
+			smallIcon: "icons/svg/color-pickers.png",
+			largeIcon: "icons/svg/color-pickers.png",
 			viewClass: ColorPickersView,
 			relevantFiles: ["views/color-pickers.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Basic",
 			title: "Item Pickers",
-			smallIcon: "assets/icons/16/menu.png",
+			smallIcon: "icons/svg/item-pickers.png",
+			largeIcon: "icons/svg/item-pickers.png",
 			viewClass: ItemPickersView,
 			relevantFiles: ["views/item-pickers.xml"]
 		});
@@ -207,7 +226,8 @@ class MainView extends HBox
 		ViewManager.instance.registerView({
 			group: "Containers",
 			title: "Tabs",
-			smallIcon: "assets/icons/16/tab_content.png",
+			smallIcon: "icons/svg/tabs.png",
+			largeIcon: "icons/svg/tabs.png",
 			viewClass: TabsView,
 			relevantFiles: ["views/tabs.xml"]
 		});
@@ -215,42 +235,48 @@ class MainView extends HBox
 			group: "Containers",
 			subGroup: "Tabs",
 			title: "Tab Styling",
-			smallIcon: "assets/icons/16/images.png",
+			smallIcon: "icons/svg/paintbrush.png",
+			largeIcon: "icons/svg/paintbrush.png",
 			viewClass: TabsStylingView,
 			relevantFiles: ["views/tabs-styling.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",
 			title: "Menus",
-			smallIcon: "assets/icons/16/menu.png",
+			smallIcon: "icons/svg/menus.png",
+			largeIcon: "icons/svg/menus.png",
 			viewClass: MenusView,
 			relevantFiles: ["views/menus.xml", "source/views/MenusView.hx"]
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",
 			title: "Frames",
-			smallIcon: "assets/icons/16/attributes_display.png",
+			smallIcon: "icons/svg/frames.png",
+			largeIcon: "icons/svg/frames.png",
 			viewClass: FramesView,
 			relevantFiles: ["views/frames.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",
 			title: "Forms",
-			smallIcon: "assets/icons/16/labels.png",
+			smallIcon: "icons/svg/forms.png",
+			largeIcon: "icons/svg/forms.png",
 			viewClass: FormsView,
 			relevantFiles: ["views/forms.xml", "source/views/FormsView.hx"]
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",
 			title: "Scroll Views",
-			smallIcon: "assets/icons/16/scroll_pane_text_image.png",
+			smallIcon: "icons/svg/scrollviews.png",
+			largeIcon: "icons/svg/scrollviews.png",
 			viewClass: ScrollViewsView,
 			relevantFiles: ["views/scrollviews.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",
 			title: "List Views",
-			smallIcon: "assets/icons/16/list_box.png",
+			smallIcon: "icons/svg/listviews.png",
+			largeIcon: "icons/svg/listviews.png",
 			viewClass: ListViewsView,
 			relevantFiles: ["views/listviews.xml", "source/views/ListViewsView.hx"]
 		});
@@ -258,7 +284,8 @@ class MainView extends HBox
 			group: "Containers",
 			subGroup: "List Views",
 			title: "Component Events",
-			smallIcon: "assets/icons/16/buttons.png",
+			smallIcon: "icons/svg/lightning.png",
+			largeIcon: "icons/svg/lightning.png",
 			viewClass: ListViewComponentEventsView,
 			relevantFiles: [
 				"views/listview-component-events.xml",
@@ -269,7 +296,8 @@ class MainView extends HBox
 			group: "Containers",
 			subGroup: "List Views",
 			title: "As Menus",
-			smallIcon: "assets/icons/16/layouts_4.png",
+			smallIcon: "icons/svg/listviews-as-menus.png",
+			largeIcon: "icons/svg/listviews-as-menus.png",
 			viewClass: ListViewsAsMenusView,
 			relevantFiles: ["views/listviews-as-menus.xml"]
 		});
@@ -277,7 +305,8 @@ class MainView extends HBox
 			group: "Containers",
 			subGroup: "List Views",
 			title: "Code Item Renderer",
-			smallIcon: "assets/icons/16/labels.png",
+			smallIcon: "icons/svg/listviews.png",
+			largeIcon: "icons/svg/listviews.png",
 			viewClass: ListViewCodeItemRenderer,
 			relevantFiles: [
 				"views/listview-code-item-renderer.xml",
@@ -288,7 +317,8 @@ class MainView extends HBox
 		ViewManager.instance.registerView({
 			group: "Containers",
 			title: "Table Views",
-			smallIcon: "assets/icons/16/table.png",
+			smallIcon: "icons/svg/tables.png",
+			largeIcon: "icons/svg/tables.png",
 			viewClass: TableViewsView,
 			relevantFiles: ["views/tableviews.xml", "source/views/TableViewsView.hx"]
 		});
@@ -296,7 +326,8 @@ class MainView extends HBox
 			group: "Containers",
 			subGroup: "Table Views",
 			title: "Column Styling",
-			smallIcon: "assets/icons/16/images.png",
+			smallIcon: "icons/svg/paintbrush.png",
+			largeIcon: "icons/svg/paintbrush.png",
 			viewClass: TableViewColumnStylingView,
 			relevantFiles: ["views/tableview-column-styling.xml"]
 		});
@@ -304,42 +335,48 @@ class MainView extends HBox
 			group: "Containers",
 			subGroup: "Table Views",
 			title: "Editable Tables",
-			smallIcon: "assets/icons/16/table.png",
+			smallIcon: "icons/svg/textinputs.png",
+			largeIcon: "icons/svg/textinputs.png",
 			viewClass: EditableTableView,
 			relevantFiles: ["views/editable-table-view.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",
 			title: "Tree Views",
-			smallIcon: "assets/icons/16/labels.png",
+			smallIcon: "icons/svg/treeviews.png",
+			largeIcon: "icons/svg/treeviews.png",
 			viewClass: TreeViewsView,
 			relevantFiles: ["views/treeviews.xml", "source/views/TreeViewsView.hx"]
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",
 			title: "Side Bars",
-			smallIcon: "assets/icons/16/layouts.png",
+			smallIcon: "icons/svg/sidebar.png",
+			largeIcon: "icons/svg/sidebar.png",
 			viewClass: SidebarsView,
 			relevantFiles: ["views/sidebars.xml", "source/views/SidebarsView.hx", "views/mysidebar.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",
 			title: "Property Grids",
-			smallIcon: "assets/icons/16/attributes_display.png",
+			smallIcon: "icons/svg/listviews.png",
+			largeIcon: "icons/svg/listviews.png",
 			viewClass: PropertyGridsView,
 			relevantFiles: ["views/propertygrids.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",
 			title: "Accordions",
-			smallIcon: "assets/icons/16/accordion.png",
+			smallIcon: "icons/svg/accordions.png",
+			largeIcon: "icons/svg/accordions.png",
 			viewClass: AccordionsView,
 			relevantFiles: ["views/accordions.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",
 			title: "Dialogs",
-			smallIcon: "assets/icons/16/dialog.png",
+			smallIcon: "icons/svg/dialogs.png",
+			largeIcon: "icons/svg/dialogs.png",
 			viewClass: DialogsView,
 			relevantFiles: [
 				"views/dialogs.xml",
@@ -352,26 +389,30 @@ class MainView extends HBox
 			group: "Containers",
 			subGroup: "Dialogs",
 			title: "File Dialogs",
-			smallIcon: "assets/icons/16/dialog.png",
+			smallIcon: "icons/svg/dialogs.png",
+			largeIcon: "icons/svg/dialogs.png",
 			viewClass: FileDialogsView,
 			relevantFiles: ["views/file-dialogs.xml", "source/views/FileDialogsView.hx"]
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",
 			title: "Splitters",
-			smallIcon: "assets/icons/16/layouts_6.png",
+			smallIcon: "icons/svg/splitters.png",
+			largeIcon: "icons/svg/splitters.png",
 			viewClass: SplitterView,
 			relevantFiles: ["views/splitters.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Containers",
 			title: "Windows",
-			smallIcon: "assets/icons/16/dialog.png",
+			smallIcon: "icons/svg/windows.png",
+			largeIcon: "icons/svg/windows.png",
 			viewClass: WindowsView,
 			relevantFiles: [
 				"views/windows.xml",
 				"source/views/WindowsView.hx",
 				"source/windows/SimpleFormWindow.hx",
+				"source/windows/SimpleGraphWindow.hx",
 				"source/windows/InlineDialogsWindow.hx"
 			]
 		});
@@ -379,12 +420,14 @@ class MainView extends HBox
 			group: "Containers",
 			subGroup: "Windows",
 			title: "Multiple Managers",
-			smallIcon: "assets/icons/16/dialog.png",
+			smallIcon: "icons/svg/windows-multiple.png",
+			largeIcon: "icons/svg/windows-multiple.png",
 			viewClass: WindowsMultipleManagersView,
 			relevantFiles: [
 				"views/windows-multiple-managers.xml",
 				"source/views/WindowsMultipleManagersView.hx",
 				"source/windows/SimpleFormWindow.hx",
+				"source/windows/SimpleGraphWindow.hx",
 				"source/windows/InlineDialogsWindow.hx"
 			]
 		});
@@ -392,14 +435,16 @@ class MainView extends HBox
 		ViewManager.instance.registerView({
 			group: "Miscellaneous",
 			title: "Tooltips",
-			smallIcon: "assets/icons/16/label.png",
+			smallIcon: "icons/svg/tooltips.png",
+			largeIcon: "icons/svg/tooltips.png",
 			viewClass: TooltipsView,
 			relevantFiles: ["views/tooltips.xml", "source/views/TooltipsView.hx"]
 		});
 		ViewManager.instance.registerView({
 			group: "Miscellaneous",
 			title: "Locales",
-			smallIcon: "assets/icons/16/labels2.png",
+			smallIcon: "icons/svg/locales.png",
+			largeIcon: "icons/svg/locales.png",
 			viewClass: LocalesView,
 			relevantFiles: [
 				"views/locales.xml",
@@ -415,14 +460,16 @@ class MainView extends HBox
 		ViewManager.instance.registerView({
 			group: "Miscellaneous",
 			title: "Drag",
-			smallIcon: "assets/icons/16/dialog.png",
+			smallIcon: "icons/svg/drag.png",
+			largeIcon: "icons/svg/drag.png",
 			viewClass: DragManagerView,
 			relevantFiles: ["views/drag-manager.xml", "source/views/DragManagerView.hx"]
 		});
 		ViewManager.instance.registerView({
 			group: "Miscellaneous",
 			title: "Animation",
-			smallIcon: "assets/icons/16/images.png",
+			smallIcon: "icons/svg/animation.png",
+			largeIcon: "icons/svg/animation.png",
 			viewClass: AnimationView,
 			relevantFiles: ["views/animation.xml", "source/views/AnimationView.hx"]
 		});
@@ -430,35 +477,40 @@ class MainView extends HBox
 			group: "Miscellaneous",
 			subGroup: "Animation",
 			title: "Animated Dots",
-			smallIcon: "assets/icons/16/images.png",
+			smallIcon: "icons/svg/animation.png",
+			largeIcon: "icons/svg/animation.png",
 			viewClass: AnimatedDotsView,
 			relevantFiles: ["views/animated-dots.xml", "source/views/AnimatedDotsView.hx"]
 		});
 		ViewManager.instance.registerView({
 			group: "Miscellaneous",
 			title: "Validators",
-			smallIcon: "assets/icons/16/textfield.png",
+			smallIcon: "icons/svg/validators.png",
+			largeIcon: "icons/svg/validators.png",
 			viewClass: ValidatorsView,
 			relevantFiles: ["views/validators.xml", "source/views/ValidatorsView.hx"]
 		});
 		ViewManager.instance.registerView({
 			group: "Miscellaneous",
 			title: "App Icon",
-			smallIcon: "assets/icons/16/images.png",
+			smallIcon: "icons/svg/app-icon.png",
+			largeIcon: "icons/svg/app-icon.png",
 			viewClass: AppIconView,
 			relevantFiles: ["views/app-icon.xml", "source/views/AppIconView.hx"]
 		});
 		ViewManager.instance.registerView({
 			group: "Miscellaneous",
 			title: "Notifications",
-			smallIcon: "assets/icons/16/button.png",
+			smallIcon: "icons/svg/notifications.png",
+			largeIcon: "icons/svg/notifications.png",
 			viewClass: NotificationsView,
 			relevantFiles: ["views/notifications.xml", "source/views/NotificationsView.hx"]
 		});
 		ViewManager.instance.registerView({
 			group: "Miscellaneous",
 			title: "Filters",
-			smallIcon: "assets/icons/16/images.png",
+			smallIcon: "icons/svg/filters.png",
+			largeIcon: "icons/svg/filters.png",
 			viewClass: FiltersView,
 			relevantFiles: ["views/filters.xml", "source/views/FiltersView.hx"]
 		});
@@ -466,28 +518,31 @@ class MainView extends HBox
 		ViewManager.instance.registerView({
 			group: "Examples",
 			title: "Simple Paint",
-			smallIcon: "assets/icons/16/images.png",
+			smallIcon: "icons/svg/canvas.png",
+			largeIcon: "icons/svg/canvas.png",
 			viewClass: SimplePaintView,
 			relevantFiles: ["views/simple-paint.xml", "source/views/SimplePaintView.hx"]
 		});
 		ViewManager.instance.registerView({
 			group: "Examples",
 			title: "Todos",
-			smallIcon: "assets/icons/16/radiobutton_group.png",
+			smallIcon: "icons/svg/todos.png",
+			largeIcon: "icons/svg/todos.png",
 			viewClass: TodosView,
 			relevantFiles: [
 				"views/todos.xml",
 				"source/views/TodosView.hx",
 				"css/todos.css",
-				"assets/images/unchecked.png",
-				"assets/images/checked.png",
-				"assets/images/delete.png"
+				"images/unchecked.png",
+				"images/checked.png",
+				"images/delete.png"
 			]
 		});
 		ViewManager.instance.registerView({
 			group: "Examples",
 			title: "Employee App",
-			smallIcon: "assets/icons/16/dialog.png",
+			smallIcon: "icons/svg/employee-app.png",
+			largeIcon: "icons/svg/employee-app.png",
 			viewClass: views.fakeemployeeapp.MainView,
 			relevantFiles: [
 				"source/views/fakeemployeeapp/MainView.hx",
@@ -504,21 +559,24 @@ class MainView extends HBox
 		ViewManager.instance.registerView({
 			group: "Tests",
 			title: "Clipping Test",
-			smallIcon: "assets/icons/16/scroll_pane_text_image.png",
+			smallIcon: "icons/svg/scrollviews.png",
+			largeIcon: "icons/svg/scrollviews.png",
 			viewClass: ClippingTestView,
 			relevantFiles: ["views/clipping-test.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Tests",
 			title: "Mouse Test",
-			smallIcon: "assets/icons/16/seek_bar_050.png",
+			smallIcon: "icons/svg/sliders.png",
+			largeIcon: "icons/svg/sliders.png",
 			viewClass: MouseTestView,
 			relevantFiles: ["views/mouse-test.xml"]
 		});
 		ViewManager.instance.registerView({
 			group: "Tests",
 			title: "Locales Test",
-			smallIcon: "assets/icons/16/labels2.png",
+			smallIcon: "icons/svg/locales.png",
+			largeIcon: "icons/svg/locales.png",
 			viewClass: LocalesTestView,
 			relevantFiles: ["views/locales-test.xml"]
 		});
@@ -585,17 +643,20 @@ class MainView extends HBox
 		}
 		_theme = value;
 		trace("loaded theme: " + value);
-		var indexToSelect = 0;
-		var ds = themeSelector.dataSource;
-		for (i in 0...ds.size)
-		{
-			if (ds.get(i).themeId == value)
+		/*
+			var indexToSelect = 0;
+			var ds = themeSelector.dataSource;
+			for (i in 0...ds.size)
 			{
-				indexToSelect = i;
-				break;
+				if (ds.get(i).themeId == value)
+				{
+					indexToSelect = i;
+					break;
+				}
 			}
-		}
-		themeSelector.selectedIndex = indexToSelect;
+			themeSelector.selectedIndex = indexToSelect;
+		 */
+		themeSwitch.selected = (_theme == "dark");
 		if (_theme != Toolkit.theme)
 		{
 			Toolkit.theme = _theme;
@@ -612,25 +673,46 @@ class MainView extends HBox
 		#end
 	}
 
-	@:bind(themeSelector, UIEvent.CHANGE)
-	private function onThemeSelectorChanged(_)
+	@:bind(themeSwitch, UIEvent.CHANGE)
+	private function onThemeSwitchChanged(_)
 	{
-		if (_theme == themeSelector.selectedItem.themeId)
+		var theme = themeSwitch.selected ? "dark" : "default";
+		if (theme == _theme)
 		{
 			return;
 		}
-		_theme = themeSelector.selectedItem.themeId;
+		_theme = theme;
 		saveThemeSetting();
+		#if js
 		if (_theme != Toolkit.theme)
 		{
-			#if js
-			js.Browser.location.reload();
-			#else
 			Toolkit.theme = _theme;
-			#end
+			changePage();
+			// js.Browser.location.reload();
 		}
+		#end
 	}
 
+	/*
+		@:bind(themeSelector, UIEvent.CHANGE)
+		private function onThemeSelectorChanged(_)
+		{
+			if (_theme == themeSelector.selectedItem.themeId)
+			{
+				return;
+			}
+			_theme = themeSelector.selectedItem.themeId;
+			saveThemeSetting();
+			if (_theme != Toolkit.theme)
+			{
+				#if js
+				js.Browser.location.reload();
+				#else
+				Toolkit.theme = _theme;
+				#end
+			}
+		}
+	 */
 	private function populateMainTree()
 	{
 		var firstNode:TreeViewNode = null;
@@ -648,7 +730,9 @@ class MainView extends HBox
 		var nodeToSelect2:TreeViewNode = null;
 		for (groupName in ViewManager.instance.viewGroupNames)
 		{
-			var groupNode = mainTree.addNode({text: groupName});
+			var icon = "icons/svg/folder3.png";
+			icon = null;
+			var groupNode = mainTree.addNode({text: groupName, icon: icon});
 			groupNode.expanded = true;
 
 			var list = ViewManager.instance.viewGroups.get(groupName);
@@ -730,8 +814,6 @@ class MainView extends HBox
 	{
 		switch (event.keyCode)
 		{
-			case FlxKey.F1:
-				FlxG.state.openSubState(new substates.TestSubState());
 			case FlxKey.F3:
 				logBox.hidden = !logBox.hidden;
 			case FlxKey.F4:

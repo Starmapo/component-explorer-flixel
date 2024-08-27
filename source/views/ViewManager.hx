@@ -14,6 +14,7 @@ typedef ViewInfo =
 {
 	var title:String;
 	var smallIcon:String;
+	var largeIcon:String;
 	var viewClass:Class<View>;
 	@:optional var relevantFiles:Array<String>;
 	@:optional var group:String;
@@ -149,7 +150,7 @@ class ViewManager
 		label = label.replace("source/windows/", "");
 		label = label.replace("views/", "");
 		label = label.replace("css/", "");
-		label = label.replace("assets/images/", "");
+		label = label.replace("images/", "");
 		label = label.replace("locales/", "");
 
 		viewContainer.text = label;
@@ -175,17 +176,17 @@ class ViewManager
 
 	private function iconForExtension(ext:String):String
 	{
-		var icon = "assets/icons/16/document.png";
+		var icon = "icons/svg/file-unknown.png";
 		switch (ext)
 		{
 			case "xml":
-				icon = "assets/icons/16/document-code.png";
+				icon = "icons/svg/file-xml.png";
 			case "hx" | "haxe":
-				icon = "assets/icons/16/document-text.png";
+				icon = "icons/svg/file-text.png";
 			case "css":
-				icon = "assets/icons/16/document-list.png";
+				icon = "icons/svg/file-text.png";
 			case "png":
-				icon = "assets/icons/16/image.png";
+				icon = "icons/svg/file-image.png";
 		}
 		return icon;
 	}

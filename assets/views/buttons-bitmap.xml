@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<vbox width="100%">
+<vbox width="100%" style="padding:10px;">
     <section-header text="Bitmap Buttons" style="color: #464646;" />
     <hbox style="background-color: #272727;padding: 10px;">
         <style>
@@ -8,7 +8,7 @@
                 padding: 6px 8px;
                 border: none;
                 color: #CCCCCC;
-                background-image: "assets/images/bitmap_button.png";
+                background-image: "images/bitmap_button.png";
                 background-image-clip: 0px 0px 26px 65px;
                 background-image-slice: 3px 3px 24px 62px;
             }

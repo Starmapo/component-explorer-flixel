@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<vbox>
+<vbox style="padding:10px;">
     <hbox width="100%">
         <vbox width="100%">
             <section-header text="Default Property Grids" />
@@ -95,9 +95,9 @@
                     
                     <property-group text="Tertiary Group">
                         <hbox verticalAlign="center">
-                            <image resource="assets/icons/logo-haxe.png" />
-                            <image resource="assets/icons/logo-javascript.png" />
-                            <image resource="assets/icons/Status_Available.png" />
+                            <image resource="icons/logo-haxe.png" />
+                            <image resource="icons/logo-javascript.png" />
+                            <image resource="icons/Status_Available.png" />
                         </hbox>
                         <property label="String Property" value="Value 3" />
                         <property label="Bool Property" type="boolean" value="true" />

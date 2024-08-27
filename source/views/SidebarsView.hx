@@ -1,6 +1,8 @@
 package views;
 
+import haxe.ui.containers.HBox;
 import haxe.ui.containers.SideBar;
+import haxe.ui.containers.VBox;
 import haxe.ui.events.MouseEvent;
 
 @:build(haxe.ui.macros.ComponentMacros.build("assets/views/sidebars.xml"))

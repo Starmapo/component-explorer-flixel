@@ -74,7 +74,7 @@
 }
 
 #todoList .checkbox-value {
-    icon: "assets/images/unchecked.png";
+    icon: "images/unchecked.png";
     width: 40px;
     height: 40px;
     border: none;
@@ -83,7 +83,7 @@
 }
 
 #todoList .checkbox-value:selected {
-    icon: "assets/images/checked.png";
+    icon: "images/checked.png";
 }
 
 .page-bottom {

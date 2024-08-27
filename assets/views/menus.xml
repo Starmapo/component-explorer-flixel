@@ -27,11 +27,11 @@
         </menu>
 
         <menu text="Icons">
-            <menuitem text="Item 1" icon="assets/icons/16/scroll_pane_text.png" shortcutText="Ctrl+A" />
-            <menuitem text="Item 2" icon="assets/icons/16/scroll_pane_text_image.png" shortcutText="Ctrl+B" />
-            <menuitem text="Item 3 (disabled)" icon="assets/icons/16/tab_content.png" disabled="true" shortcutText="Ctrl+C" />
-            <menuitem text="Item 4" icon="assets/icons/16/table.png" shortcutText="Ctrl+D" />
-            <menuitem text="Item 5" icon="assets/icons/16/list_box.png" shortcutText="Ctrl+E" />
+            <menuitem text="Item 1" icon="icons/16/scroll_pane_text.png" shortcutText="Ctrl+A" />
+            <menuitem text="Item 2" icon="icons/16/scroll_pane_text_image.png" shortcutText="Ctrl+B" />
+            <menuitem text="Item 3 (disabled)" icon="icons/16/tab_content.png" disabled="true" shortcutText="Ctrl+C" />
+            <menuitem text="Item 4" icon="icons/16/table.png" shortcutText="Ctrl+D" />
+            <menuitem text="Item 5" icon="icons/16/list_box.png" shortcutText="Ctrl+E" />
         </menu>
 
         <menu text="Any Content #1">
@@ -137,19 +137,19 @@
         </menu>
     </menubar>
 
-    <vbox width="100%" height="100%" style="padding-top:15px;spacing:15px;">
+    <vbox width="100%" height="100%" style="padding:10px;padding-top:15px;spacing:15px;">
         <hbox width="100%" style="spacing:15px;">
             <listview id="lv1" width="33%" height="200" selectedIndex="0">
                 <data>
-                    <item text="Haxe" icon="assets/icons/logo-haxe.png" />
-                    <item text="Java" icon="assets/icons/logo-java.png" />
-                    <item text="Javascript" icon="assets/icons/logo-javascript.png" />
-                    <item text="C++" icon="assets/icons/logo-cpp.png" />
-                    <item text="PHP" icon="assets/icons/logo-php.png" />
-                    <item text="C#" icon="assets/icons/logo-cs.png" />
-                    <item text="F#" icon="assets/icons/logo-fs.png" />
-                    <item text="OCaml" icon="assets/icons/logo-ocaml.png" />
-                    <item text="Assembler" icon="assets/icons/logo-asm.png" />
+                    <item text="Haxe" icon="icons/logo-haxe.png" />
+                    <item text="Java" icon="icons/logo-java.png" />
+                    <item text="Javascript" icon="icons/logo-javascript.png" />
+                    <item text="C++" icon="icons/logo-cpp.png" />
+                    <item text="PHP" icon="icons/logo-php.png" />
+                    <item text="C#" icon="icons/logo-cs.png" />
+                    <item text="F#" icon="icons/logo-fs.png" />
+                    <item text="OCaml" icon="icons/logo-ocaml.png" />
+                    <item text="Assembler" icon="icons/logo-asm.png" />
                 </data>
             </listview>
 
@@ -169,15 +169,15 @@
                     <progress id="rating" width="100%" />
                 </item-renderer>
                 <data>
-                    <item name="Haxe" image="assets/icons/logo-haxe.png" rating="100" />
-                    <item name="Java" image="assets/icons/logo-java.png" rating="33" />
-                    <item name="Javascript" image="assets/icons/logo-javascript.png" rating="75" />
-                    <item name="C++" image="assets/icons/logo-cpp.png" rating="63" />
-                    <item name="PHP" image="assets/icons/logo-php.png" rating="40" />
-                    <item name="C#" image="assets/icons/logo-cs.png" rating="80" />
-                    <item name="F#" image="assets/icons/logo-fs.png" rating="11" />
-                    <item name="OCaml" image="assets/icons/logo-ocaml.png" rating="39" />
-                    <item name="Assembler" image="assets/icons/logo-asm.png" rating="81" />
+                    <item name="Haxe" image="icons/logo-haxe.png" rating="100" />
+                    <item name="Java" image="icons/logo-java.png" rating="33" />
+                    <item name="Javascript" image="icons/logo-javascript.png" rating="75" />
+                    <item name="C++" image="icons/logo-cpp.png" rating="63" />
+                    <item name="PHP" image="icons/logo-php.png" rating="40" />
+                    <item name="C#" image="icons/logo-cs.png" rating="80" />
+                    <item name="F#" image="icons/logo-fs.png" rating="11" />
+                    <item name="OCaml" image="icons/logo-ocaml.png" rating="39" />
+                    <item name="Assembler" image="icons/logo-asm.png" rating="81" />
                 </data>
             </tableview>
 

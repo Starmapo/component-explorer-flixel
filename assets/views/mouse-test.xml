@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<vbox>
+<vbox style="padding:10px;">
     <scrollview width="200" height="200">
         <vbox>
             <slider pos="0" width="250" />

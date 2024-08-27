@@ -1,8 +1,8 @@
 package views;
 
+import haxe.ui.containers.menus.Menu;
 import haxe.ui.core.Screen;
 import haxe.ui.events.MouseEvent;
-import haxe.ui.containers.menus.Menu;
 
 @:build(haxe.ui.macros.ComponentMacros.build("assets/views/menus.xml"))
 class MenusView extends View
@@ -71,11 +71,11 @@ class MyMenu extends Menu {}
 
 @:xml('
 <menu>
-    <menu-item text="Cut" icon="assets/icons/actions/cut.png" />
-    <menu-item text="Copy" icon="assets/icons/actions/copy.png" />
-    <menu-item text="Paste" icon="assets/icons/actions/paste.png" />
+    <menu-item text="Cut" icon="icons/actions/cut.png" />
+    <menu-item text="Copy" icon="icons/actions/copy.png" />
+    <menu-item text="Paste" icon="icons/actions/paste.png" />
     <menu-separator />
-    <menu-item text="Delete" icon="assets/icons/actions/delete.png" />
+    <menu-item text="Delete" icon="icons/actions/delete.png" />
 </menu>
 ')
 class CutCopyPasteMenu extends Menu {}

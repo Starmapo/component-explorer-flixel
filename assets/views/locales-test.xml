@@ -1,4 +1,4 @@
-<vbox width="100%">
+<vbox width="100%" style="padding:10px;">
     <hbox>
         <vbox>
             <slider id="slider1" precision="2" />
@@ -13,12 +13,12 @@
             }
         </style>
         <button-bar id="languageSelector" direction="vertical" selectedIndex="0" onchange="haxe.ui.locale.LocaleManager.instance.language = this.selectedButton.userData">
-            <button icon="assets/icons/flags-small/uk.png" userData="en" tooltip="{{english}}" />
-            <button icon="assets/icons/flags-small/us.png" userData="en_US" tooltip="{{english.us}}" />
-            <button icon="assets/icons/flags-small/france.png" userData="fr" tooltip="{{french}}" />
-            <button icon="assets/icons/flags-small/wales.png" userData="cy" tooltip="{{welsh}}" />
-            <button icon="assets/icons/flags-small/poland.png" userData="pl" tooltip="{{poland}}" />
-            <button icon="assets/icons/flags-small/russian.png" userData="ru" tooltip="{{russian}}" />
+            <button icon="icons/flags-small/uk.png" userData="en" tooltip="{{english}}" />
+            <button icon="icons/flags-small/us.png" userData="en_US" tooltip="{{english.us}}" />
+            <button icon="icons/flags-small/france.png" userData="fr" tooltip="{{french}}" />
+            <button icon="icons/flags-small/wales.png" userData="cy" tooltip="{{welsh}}" />
+            <button icon="icons/flags-small/poland.png" userData="pl" tooltip="{{poland}}" />
+            <button icon="icons/flags-small/russian.png" userData="ru" tooltip="{{russian}}" />
         </button-bar>
     </hbox>
 </vbox>

@@ -55,13 +55,13 @@ class TableViewsView extends View
 		switch (imageIndex)
 		{
 			case 0:
-				d.colX = "assets/icons/Status_Available.png";
+				d.colX = "icons/Status_Available.png";
 			case 1:
-				d.colX = "assets/icons/Status_None.png";
+				d.colX = "icons/Status_None.png";
 			case 2:
-				d.colX = "assets/icons/Status_Partially.png";
+				d.colX = "icons/Status_Partially.png";
 			case 3:
-				d.colX = "assets/icons/Status_Unavailable.png";
+				d.colX = "icons/Status_Unavailable.png";
 		}
 		d.colB = Std.random(100);
 		d.colC = "Status " + Std.random(1000);

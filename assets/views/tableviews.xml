@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<vbox width="100%">
+<vbox width="100%" style="padding:10px;">
     <hbox width="100%">
         <vbox width="100%">
             <section-header text="Default Tableviews" />
@@ -137,15 +137,15 @@
                         <progress id="rating" width="100%" />
                     </item-renderer>
                     <data>
-                        <item name="Haxe" image="assets/icons/logo-haxe.png" rating="100" />
-                        <item name="Java" image="assets/icons/logo-java.png" rating="33" />
-                        <item name="Javascript" image="assets/icons/logo-javascript.png" rating="75" />
-                        <item name="C++" image="assets/icons/logo-cpp.png" rating="63" />
-                        <item name="PHP" image="assets/icons/logo-php.png" rating="40" />
-                        <item name="C#" image="assets/icons/logo-cs.png" rating="80" />
-                        <item name="F#" image="assets/icons/logo-fs.png" rating="11" />
-                        <item name="OCaml" image="assets/icons/logo-ocaml.png" rating="39" />
-                        <item name="Assembler" image="assets/icons/logo-asm.png" rating="81" />
+                        <item name="Haxe" image="icons/logo-haxe.png" rating="100" />
+                        <item name="Java" image="icons/logo-java.png" rating="33" />
+                        <item name="Javascript" image="icons/logo-javascript.png" rating="75" />
+                        <item name="C++" image="icons/logo-cpp.png" rating="63" />
+                        <item name="PHP" image="icons/logo-php.png" rating="40" />
+                        <item name="C#" image="icons/logo-cs.png" rating="80" />
+                        <item name="F#" image="icons/logo-fs.png" rating="11" />
+                        <item name="OCaml" image="icons/logo-ocaml.png" rating="39" />
+                        <item name="Assembler" image="icons/logo-asm.png" rating="81" />
                     </data>
                 </tableview>
                 
@@ -174,15 +174,15 @@
                         <progress id="rating" width="100%" />
                     </item-renderer>
                     <data>
-                        <item name="Haxe" image="assets/icons/logo-haxe.png" rating="100" />
-                        <item name="Java" image="assets/icons/logo-java.png" rating="33" />
-                        <item name="Javascript" image="assets/icons/logo-javascript.png" rating="75" />
-                        <item name="C++" image="assets/icons/logo-cpp.png" rating="63" />
-                        <item name="PHP" image="assets/icons/logo-php.png" rating="40" />
-                        <item name="C#" image="assets/icons/logo-cs.png" rating="80" />
-                        <item name="F#" image="assets/icons/logo-fs.png" rating="11" />
-                        <item name="OCaml" image="assets/icons/logo-ocaml.png" rating="39" />
-                        <item name="Assembler" image="assets/icons/logo-asm.png" rating="81" />
+                        <item name="Haxe" image="icons/logo-haxe.png" rating="100" />
+                        <item name="Java" image="icons/logo-java.png" rating="33" />
+                        <item name="Javascript" image="icons/logo-javascript.png" rating="75" />
+                        <item name="C++" image="icons/logo-cpp.png" rating="63" />
+                        <item name="PHP" image="icons/logo-php.png" rating="40" />
+                        <item name="C#" image="icons/logo-cs.png" rating="80" />
+                        <item name="F#" image="icons/logo-fs.png" rating="11" />
+                        <item name="OCaml" image="icons/logo-ocaml.png" rating="39" />
+                        <item name="Assembler" image="icons/logo-asm.png" rating="81" />
                     </data>
                 </tableview>
             </hbox>

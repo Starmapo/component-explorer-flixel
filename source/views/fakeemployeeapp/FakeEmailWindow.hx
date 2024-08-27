@@ -1,10 +1,10 @@
 package views.fakeemployeeapp;
 
-import haxe.ui.util.Timer;
 import haxe.ui.containers.VBox;
 import haxe.ui.containers.dialogs.Dialog;
-import haxe.ui.events.MouseEvent;
 import haxe.ui.containers.windows.Window;
+import haxe.ui.events.MouseEvent;
+import haxe.ui.util.Timer;
 
 @:xml('
 <window title="Email" width="410" height="400" left="30" top="30">
@@ -80,7 +80,7 @@ class FakeEmailWindow extends Window
 
 @:xml('
     <dialog title="Please Wait" closable="false">
-        <image resource="assets/images/preloader.png" horizontalAlign="center" />
+        <image resource="images/preloader.png" horizontalAlign="center" />
         <label text="Sending email, please wait..." />
     </dialog>
 ')

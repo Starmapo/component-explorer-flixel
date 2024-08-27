@@ -1,4 +1,4 @@
-<vbox>
+<vbox style="padding:10px;">
     <section-header text="Built In Animations" />
     <frame text="Fade In / Out">
         <hbox>
@@ -8,15 +8,15 @@
             </vbox>
             <listview id="lv1" width="200" height="150">
                 <data>
-                    <item text="Haxe" icon="assets/icons/logo-haxe.png" />
-                    <item text="Java" icon="assets/icons/logo-java.png" />
-                    <item text="Javascript" icon="assets/icons/logo-javascript.png" />
-                    <item text="C++" icon="assets/icons/logo-cpp.png" />
-                    <item text="PHP" icon="assets/icons/logo-php.png" />
-                    <item text="C#" icon="assets/icons/logo-cs.png" />
-                    <item text="F#" icon="assets/icons/logo-fs.png" />
-                    <item text="OCaml" icon="assets/icons/logo-ocaml.png" />
-                    <item text="Assembler" icon="assets/icons/logo-asm.png" />
+                    <item text="Haxe" icon="icons/logo-haxe.png" />
+                    <item text="Java" icon="icons/logo-java.png" />
+                    <item text="Javascript" icon="icons/logo-javascript.png" />
+                    <item text="C++" icon="icons/logo-cpp.png" />
+                    <item text="PHP" icon="icons/logo-php.png" />
+                    <item text="C#" icon="icons/logo-cs.png" />
+                    <item text="F#" icon="icons/logo-fs.png" />
+                    <item text="OCaml" icon="icons/logo-ocaml.png" />
+                    <item text="Assembler" icon="icons/logo-asm.png" />
                 </data>
             </listview>
         </hbox>

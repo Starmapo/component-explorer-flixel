@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<module>
+<module preload="all" preloader="custom.Preloader">
     <resources>
         <resource path="assets/css" prefix="css" />
+        <resource path="assets/icons" prefix="icons" />
+        <resource path="assets/images" prefix="images" />
+        <resource path="assets/images/people" prefix="people" />
         <resource path="assets/views" prefix="views" />
+        <resource path="assets/fonts" prefix="fonts" />
         <resource path="assets/themes" prefix="themes" />
         <resource path="assets/locales" prefix="locales" />
         <resource path="source/fakedata" prefix="source/fakedata" />
@@ -24,6 +28,9 @@
         <default>
             <style resource="themes/default/main.css" />
         </default>
+        <dark>
+            <style resource="themes/dark/main.css" />
+        </dark>
     </themes>
 
     <locales>

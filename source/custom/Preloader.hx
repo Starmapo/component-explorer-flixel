@@ -3,7 +3,7 @@ package custom;
 @:xml('
 <box>
     <vbox verticalAlign="center" horizontalAlign="center">
-        <image resource="assets/images/preloader.png" horizontalAlign="center" />
+        <image resource="images/preloader.png" horizontalAlign="center" />
         <label text="Loading explorer, please wait..." horizontalAlign="center" />
     </vbox>    
 </box>
